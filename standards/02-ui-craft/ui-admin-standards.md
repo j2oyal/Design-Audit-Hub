@@ -64,3 +64,14 @@ Tuyệt đối không dùng màu sắc trang trí tự do. Chỉ sử dụng 4 m
 ## 💀 5. XỬ LÝ TRẠNG THÁI RỖNG & ĐANG NẠP (SKELETON & EMPTY STATES)
 * Khi đang tải dữ liệu: Bắt buộc dùng hiệu ứng nhịp thở **Skeleton Loading Pulse** mô phỏng đúng cấu trúc bảng, không để màn hình trắng xóa hoặc xoay vòng đơn điệu.
 * Khi không có dữ liệu: Hiển thị icon minh họa trang nhã kèm thông điệp: *"Chưa có giao dịch nào phù hợp với bộ lọc"* cùng nút *"Đặt lại bộ lọc"*.
+
+---
+
+## 👁️ 6. KỶ LUẬT THẨM ĐỊNH ĐỘ TƯƠNG PHẢN (WCAG 2.1 AA CONTRAST INTEGRITY)
+* **Tuyệt đối cấm "Tô hồng báo cáo" (Zero-Whitewashing Policy)**: Mọi lỗi tương phản do công cụ quét phát hiện bắt buộc phải được điều tra tường tận nguyên nhân, tuyệt đối không được giấu nhẹm hoặc tùy tiện cho PASS khi số lượng vi phạm còn tồn đọng.
+* **Ngưỡng chuẩn mực**:
+  * **Văn bản nội dung & Dữ liệu bảng**: Tỷ lệ tương phản tối thiểu **$\ge 4.5:1$** trên nền thực tế.
+  * **Tiêu đề lớn ($\ge 18\text{px}$ bold)**: Tỷ lệ tương phản tối thiểu **$\ge 3.0:1$**.
+  * **Nhãn phân loại phụ / Metadata**: Tối thiểu **$\ge 4.5:1$** (Ví dụ: Thay thế nhãn mờ `#AFAFAF` bằng Slate-500 `#64748B` trên nền trắng).
+* **Kiểm chứng nền thực tế (Computed Effective Background)**: Khi script phân tích cho ra tỷ lệ tương phản bất thường (như ratio = 1 do fg == bg), auditor bắt buộc phải kiểm tra thủ công lớp nền thực tế (card fill, modal scrim) để phân định rõ giữa lỗi thuật toán quét và lỗi thiết kế thực tế.
+

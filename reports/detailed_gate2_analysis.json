@@ -1,0 +1,2480 @@
+{
+  "success": true,
+  "result": [
+    {
+      "id": "25493:60176",
+      "name": "A01 – Corporate Web Pages (Page List)",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 250,
+      "allRadii": [
+        1.5,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "PAGE NAME",
+        "TYPE",
+        "REGION"
+      ],
+      "allCapsCount": 13,
+      "arrowSpam": [],
+      "contrastFailuresCount": 152,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Corporate Web Pages",
+          "fontSize": 14,
+          "ratio": 1,
+          "fg": "#FF7434",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Banners & Popups",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [PAGE NAME]",
+          "align": "LEFT",
+          "text": "PAGE NAME",
+          "h": 40
+        },
+        {
+          "name": "TH [TYPE]",
+          "align": "LEFT",
+          "text": "TYPE",
+          "h": 40
+        },
+        {
+          "name": "TH [REGION]",
+          "align": "LEFT",
+          "text": "REGION",
+          "h": 40
+        },
+        {
+          "name": "TH [LANG]",
+          "align": "LEFT",
+          "text": "LANG",
+          "h": 40
+        },
+        {
+          "name": "TH [STATUS]",
+          "align": "LEFT",
+          "text": "STATUS",
+          "h": 40
+        },
+        {
+          "name": "TH [UPDATED AT]",
+          "align": "LEFT",
+          "text": "UPDATED AT",
+          "h": 40
+        }
+      ],
+      "badgeCount": 151,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-01",
+          "label": "W12-01",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W10-06",
+          "label": "W10-06",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 251,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25493:76949",
+      "name": "A00 – Analytics Dashboard",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 351,
+      "allRadii": [
+        1.5,
+        4,
+        8,
+        10,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "SOURCE",
+        "MEDIUM",
+        "LANDING PAGE"
+      ],
+      "allCapsCount": 20,
+      "arrowSpam": [],
+      "contrastFailuresCount": 195,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Corporate Web Pages",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Banners & Popups",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "Cell [Source]",
+          "align": "LEFT",
+          "text": "SOURCE",
+          "h": 40
+        },
+        {
+          "name": "Cell [Medium]",
+          "align": "LEFT",
+          "text": "MEDIUM",
+          "h": 40
+        },
+        {
+          "name": "Cell [Landing Page]",
+          "align": "LEFT",
+          "text": "LANDING PAGE",
+          "h": 40
+        },
+        {
+          "name": "Cell [Visits]",
+          "align": "RIGHT",
+          "text": "VISITS",
+          "h": 40
+        },
+        {
+          "name": "Cell [Direct]",
+          "align": "RIGHT",
+          "text": "B",
+          "h": 44
+        },
+        {
+          "name": "Cell [(none)]",
+          "align": "RIGHT",
+          "text": "B",
+          "h": 44
+        }
+      ],
+      "badgeCount": 214,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge [W13-07]",
+          "label": "W13-07",
+          "fill": ""
+        },
+        {
+          "name": ".badge-label",
+          "label": "W13-07",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "badge-flag",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 364,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25493:79195",
+      "name": "A10 – Forms & Leads",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 271,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "FORM / FLOW NAME",
+        "REQUIREMENT",
+        "TYPE"
+      ],
+      "allCapsCount": 13,
+      "arrowSpam": [],
+      "contrastFailuresCount": 148,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Forms & Leads",
+          "fontSize": 14,
+          "ratio": 2.7,
+          "fg": "#FFFFFF",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        },
+        {
+          "text": "SYSTEM & GOVERNANCE",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [FORM / FLOW NAME]",
+          "align": "LEFT",
+          "text": "FORM / FLOW NAME",
+          "h": 40
+        },
+        {
+          "name": "TH [REQUIREMENT]",
+          "align": "LEFT",
+          "text": "REQUIREMENT",
+          "h": 40
+        },
+        {
+          "name": "TH [TYPE]",
+          "align": "LEFT",
+          "text": "TYPE",
+          "h": 40
+        },
+        {
+          "name": "TH [CONSENT]",
+          "align": "LEFT",
+          "text": "CONSENT",
+          "h": 40
+        },
+        {
+          "name": "TH [STATUS]",
+          "align": "LEFT",
+          "text": "STATUS",
+          "h": 40
+        },
+        {
+          "name": "TH [DESTINATION]",
+          "align": "LEFT",
+          "text": "DESTINATION",
+          "h": 40
+        }
+      ],
+      "badgeCount": 135,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W6/W8",
+          "label": "W6/W8",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "B",
+          "fill": ""
+        },
+        {
+          "name": ".badge-label",
+          "label": "B",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 256,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25493:83896",
+      "name": "A01 – Corporate Web Pages_ Create Modal",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 281,
+      "allRadii": [
+        1.5,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "PAGE NAME",
+        "TYPE",
+        "REGION"
+      ],
+      "allCapsCount": 13,
+      "arrowSpam": [],
+      "contrastFailuresCount": 164,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Corporate Web Pages",
+          "fontSize": 14,
+          "ratio": 1,
+          "fg": "#FF7434",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Banners & Popups",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [PAGE NAME]",
+          "align": "LEFT",
+          "text": "PAGE NAME",
+          "h": 40
+        },
+        {
+          "name": "TH [TYPE]",
+          "align": "LEFT",
+          "text": "TYPE",
+          "h": 40
+        },
+        {
+          "name": "TH [REGION]",
+          "align": "LEFT",
+          "text": "REGION",
+          "h": 40
+        },
+        {
+          "name": "TH [LANG]",
+          "align": "LEFT",
+          "text": "LANG",
+          "h": 40
+        },
+        {
+          "name": "TH [STATUS]",
+          "align": "LEFT",
+          "text": "STATUS",
+          "h": 40
+        },
+        {
+          "name": "TH [UPDATED AT]",
+          "align": "LEFT",
+          "text": "UPDATED AT",
+          "h": 40
+        }
+      ],
+      "badgeCount": 183,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-01",
+          "label": "W12-01",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W10-06",
+          "label": "W10-06",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 260,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25493:94162",
+      "name": "A03 – Campaigns",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 311,
+      "allRadii": [
+        1.5,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "CAMPAIGN NAME",
+        "TYPE",
+        "REGION"
+      ],
+      "allCapsCount": 14,
+      "arrowSpam": [],
+      "contrastFailuresCount": 187,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns Management",
+          "fontSize": 14,
+          "ratio": 1,
+          "fg": "#FF7434",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Banners & Popups",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [CAMPAIGN NAME]",
+          "align": "LEFT",
+          "text": "CAMPAIGN NAME",
+          "h": 40
+        },
+        {
+          "name": "TH [TYPE]",
+          "align": "LEFT",
+          "text": "TYPE",
+          "h": 40
+        },
+        {
+          "name": "TH [REGION]",
+          "align": "LEFT",
+          "text": "REGION",
+          "h": 40
+        },
+        {
+          "name": "TH [LANG]",
+          "align": "LEFT",
+          "text": "LANG",
+          "h": 40
+        },
+        {
+          "name": "TH [START DATE]",
+          "align": "LEFT",
+          "text": "START DATE",
+          "h": 40
+        },
+        {
+          "name": "TH [END DATE]",
+          "align": "LEFT",
+          "text": "END DATE",
+          "h": 40
+        }
+      ],
+      "badgeCount": 188,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W7",
+          "label": "W7",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-01",
+          "label": "W12-01",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / Promotion Landing",
+          "label": "Promotion Landing",
+          "fill": "#0D0D0D"
+        }
+      ],
+      "buttonCount": 289,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns Management"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25493:98800",
+      "name": "A04 – Banners & Popups",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 211,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "BANNER NAME",
+        "PLACEMENT",
+        "REGION"
+      ],
+      "allCapsCount": 12,
+      "arrowSpam": [],
+      "contrastFailuresCount": 125,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Banners & Popups Management",
+          "fontSize": 14,
+          "ratio": 1,
+          "fg": "#FF7434",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Banners & Popups",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [BANNER NAME]",
+          "align": "LEFT",
+          "text": "BANNER NAME",
+          "h": 40
+        },
+        {
+          "name": "TH [PLACEMENT]",
+          "align": "LEFT",
+          "text": "PLACEMENT",
+          "h": 40
+        },
+        {
+          "name": "TH [REGION]",
+          "align": "LEFT",
+          "text": "REGION",
+          "h": 40
+        },
+        {
+          "name": "TH [LANG]",
+          "align": "LEFT",
+          "text": "LANG",
+          "h": 40
+        },
+        {
+          "name": "TH [DISPLAY PERIOD]",
+          "align": "LEFT",
+          "text": "DISPLAY PERIOD",
+          "h": 40
+        },
+        {
+          "name": "TH [STATUS]",
+          "align": "LEFT",
+          "text": "STATUS",
+          "h": 40
+        }
+      ],
+      "badgeCount": 93,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-03",
+          "label": "W12-03",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-04",
+          "label": "W12-04",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / HQ conflict control",
+          "label": "HQ conflict control",
+          "fill": "#3C70E5"
+        }
+      ],
+      "buttonCount": 186,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups Management"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25502:39392",
+      "name": "A02 – Pages / Page Editor",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 124,
+      "allRadii": [
+        1.5,
+        4,
+        6,
+        8,
+        12,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "DRAFT",
+        "DEEP_LINK",
+        "MIRAE ASSET SECURITIES (HK)"
+      ],
+      "allCapsCount": 8,
+      "arrowSpam": [],
+      "contrastFailuresCount": 77,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Corporate Web Pages",
+          "fontSize": 14,
+          "ratio": 1,
+          "fg": "#FF7434",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Banners & Popups",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [],
+      "badgeCount": 97,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-01",
+          "label": "W12-01",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-05",
+          "label": "W12-05",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W10",
+          "label": "W10",
+          "fill": "#18A13E"
+        }
+      ],
+      "buttonCount": 51,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25504:47809",
+      "name": "A05 – Media Library / Publishing",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 149,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "CONTENT",
+        "ACTION",
+        "ACTOR"
+      ],
+      "allCapsCount": 13,
+      "arrowSpam": [],
+      "contrastFailuresCount": 93,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Banners & Popups",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [CONTENT]",
+          "align": "LEFT",
+          "text": "CONTENT",
+          "h": 40
+        },
+        {
+          "name": "TH [ACTION]",
+          "align": "LEFT",
+          "text": "ACTION",
+          "h": 40
+        },
+        {
+          "name": "TH [ACTOR]",
+          "align": "LEFT",
+          "text": "ACTOR",
+          "h": 40
+        },
+        {
+          "name": "TH [TIME]",
+          "align": "LEFT",
+          "text": "TIME",
+          "h": 40
+        },
+        {
+          "name": "TH [SUMMARY]",
+          "align": "LEFT",
+          "text": "SUMMARY",
+          "h": 40
+        }
+      ],
+      "badgeCount": 76,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-05",
+          "label": "W12-05",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-06",
+          "label": "W12-06",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-07",
+          "label": "W12-07",
+          "fill": "#18A13E"
+        }
+      ],
+      "buttonCount": 121,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25504:49986",
+      "name": "A06 – SEO & Analytics / Localization",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 122,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "MAHK",
+        "PHONE ▾",
+        "GTM • UAT"
+      ],
+      "allCapsCount": 8,
+      "arrowSpam": [],
+      "contrastFailuresCount": 73,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Forms & Leads",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [],
+      "badgeCount": 17,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W10-01..06",
+          "label": "W10-01..06",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W13-01..06",
+          "label": "W13-01..06",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W10-01/02/06",
+          "label": "W10-01/02/06",
+          "fill": "#18A13E"
+        }
+      ],
+      "buttonCount": 27,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25504:51594",
+      "name": "A07 – Workflow / Approval",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 154,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "SUBMITTED",
+        "VERSION",
+        "ACTION"
+      ],
+      "allCapsCount": 15,
+      "arrowSpam": [],
+      "contrastFailuresCount": 89,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Forms & Leads",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [VERSION]",
+          "align": "LEFT",
+          "text": "VERSION",
+          "h": 40
+        },
+        {
+          "name": "TH [ACTION]",
+          "align": "LEFT",
+          "text": "ACTION",
+          "h": 40
+        },
+        {
+          "name": "TH [ACTOR]",
+          "align": "LEFT",
+          "text": "ACTOR",
+          "h": 40
+        },
+        {
+          "name": "TH [TIME]",
+          "align": "LEFT",
+          "text": "TIME",
+          "h": 40
+        },
+        {
+          "name": "TH [CHANGE SUMMARY]",
+          "align": "LEFT",
+          "text": "CHANGE SUMMARY",
+          "h": 40
+        }
+      ],
+      "badgeCount": 77,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-02",
+          "label": "W12-02",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-07",
+          "label": "W12-07",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge / SUBMITTED",
+          "label": "SUBMITTED",
+          "fill": "#FF7434"
+        }
+      ],
+      "buttonCount": 139,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25504:53465",
+      "name": "A08 – Roles & Permissions",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 330,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "MAHK ▾",
+        "ROLE NAME",
+        "PERMISSIONS"
+      ],
+      "allCapsCount": 25,
+      "arrowSpam": [],
+      "contrastFailuresCount": 176,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Forms & Leads",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [ROLE NAME]",
+          "align": "LEFT",
+          "text": "ROLE NAME",
+          "h": 40
+        },
+        {
+          "name": "TH [PERMISSIONS]",
+          "align": "LEFT",
+          "text": "PERMISSIONS",
+          "h": 40
+        },
+        {
+          "name": "TH [SCOPE]",
+          "align": "LEFT",
+          "text": "SCOPE",
+          "h": 40
+        },
+        {
+          "name": "TH [STATUS]",
+          "align": "LEFT",
+          "text": "STATUS",
+          "h": 40
+        },
+        {
+          "name": "TH [USERS]",
+          "align": "LEFT",
+          "text": "USERS",
+          "h": 40
+        },
+        {
+          "name": "TH [ACTIONS]",
+          "align": "LEFT",
+          "text": "ACTIONS",
+          "h": 40
+        }
+      ],
+      "badgeCount": 205,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W12-08",
+          "label": "W12-08",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "B",
+          "fill": ""
+        },
+        {
+          "name": ".badge-label",
+          "label": "B",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 381,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25504:57810",
+      "name": "A09 – Structured Content",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 270,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "CONTENT / RECORD",
+        "REQUIREMENT",
+        "REGION"
+      ],
+      "allCapsCount": 12,
+      "arrowSpam": [],
+      "contrastFailuresCount": 156,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Structured Content",
+          "fontSize": 14,
+          "ratio": 2.7,
+          "fg": "#FFFFFF",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        },
+        {
+          "text": "Campaigns",
+          "fontSize": 14,
+          "ratio": 4.3,
+          "fg": "#797979",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [CONTENT / RECORD]",
+          "align": "LEFT",
+          "text": "CONTENT / RECORD",
+          "h": 40
+        },
+        {
+          "name": "TH [REQUIREMENT]",
+          "align": "LEFT",
+          "text": "REQUIREMENT",
+          "h": 40
+        },
+        {
+          "name": "TH [REGION]",
+          "align": "LEFT",
+          "text": "REGION",
+          "h": 40
+        },
+        {
+          "name": "TH [LANG]",
+          "align": "LEFT",
+          "text": "LANG",
+          "h": 40
+        },
+        {
+          "name": "TH [STATUS]",
+          "align": "LEFT",
+          "text": "STATUS",
+          "h": 40
+        },
+        {
+          "name": "TH [UPDATED BY]",
+          "align": "LEFT",
+          "text": "UPDATED BY",
+          "h": 40
+        }
+      ],
+      "badgeCount": 135,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W1/W2/W5",
+          "label": "W1/W2/W5",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "B",
+          "fill": ""
+        },
+        {
+          "name": ".badge-label",
+          "label": "B",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 256,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Structured Content"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25504:63264",
+      "name": "A11 – Legal & Compliance",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 269,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "DOCUMENT / REQUIREMENT",
+        "VERSION",
+        "EFFECTIVE DATE"
+      ],
+      "allCapsCount": 14,
+      "arrowSpam": [],
+      "contrastFailuresCount": 147,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "SYSTEM & GOVERNANCE",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Legal & Compliance",
+          "fontSize": 14,
+          "ratio": 2.7,
+          "fg": "#FFFFFF",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [DOCUMENT / REQUIREMENT]",
+          "align": "LEFT",
+          "text": "DOCUMENT / REQUIREME",
+          "h": 40
+        },
+        {
+          "name": "TH [VERSION]",
+          "align": "LEFT",
+          "text": "VERSION",
+          "h": 40
+        },
+        {
+          "name": "TH [EFFECTIVE DATE]",
+          "align": "LEFT",
+          "text": "EFFECTIVE DATE",
+          "h": 40
+        },
+        {
+          "name": "TH [JURISDICTION]",
+          "align": "LEFT",
+          "text": "JURISDICTION",
+          "h": 40
+        },
+        {
+          "name": "TH [REVIEW]",
+          "align": "LEFT",
+          "text": "REVIEW",
+          "h": 40
+        },
+        {
+          "name": "TH [STATUS]",
+          "align": "LEFT",
+          "text": "STATUS",
+          "h": 40
+        }
+      ],
+      "badgeCount": 135,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W9-01..08",
+          "label": "W9-01..08",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "B",
+          "fill": ""
+        },
+        {
+          "name": ".badge-label",
+          "label": "B",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 256,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25504:67455",
+      "name": "A12 – Search & Discovery",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 276,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "OBJECT TYPE",
+        "INDEX",
+        "RESULT TYPE"
+      ],
+      "allCapsCount": 14,
+      "arrowSpam": [],
+      "contrastFailuresCount": 150,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Search & Discovery",
+          "fontSize": 14,
+          "ratio": 2.7,
+          "fg": "#FFFFFF",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        },
+        {
+          "text": "SYSTEM & GOVERNANCE",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [OBJECT TYPE]",
+          "align": "LEFT",
+          "text": "OBJECT TYPE",
+          "h": 40
+        },
+        {
+          "name": "TH [INDEX]",
+          "align": "LEFT",
+          "text": "INDEX",
+          "h": 40
+        },
+        {
+          "name": "TH [RESULT TYPE]",
+          "align": "LEFT",
+          "text": "RESULT TYPE",
+          "h": 40
+        },
+        {
+          "name": "TH [TAXONOMY]",
+          "align": "LEFT",
+          "text": "TAXONOMY",
+          "h": 40
+        },
+        {
+          "name": "TH [FILTERS]",
+          "align": "LEFT",
+          "text": "FILTERS",
+          "h": 40
+        },
+        {
+          "name": "TH [RELATED RULE]",
+          "align": "LEFT",
+          "text": "RELATED RULE",
+          "h": 40
+        }
+      ],
+      "badgeCount": 135,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W11-01..09",
+          "label": "W11-01..09",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "B",
+          "fill": ""
+        },
+        {
+          "name": ".badge-label",
+          "label": "B",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 256,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "25506:71009",
+      "name": "A13 – Common Components & Links",
+      "width": 1440,
+      "height": 1020,
+      "textCount": 272,
+      "allRadii": [
+        4,
+        6,
+        8,
+        12,
+        16,
+        20
+      ],
+      "clayFills": [],
+      "neonFills": [],
+      "allCapsSpam": [
+        "CONTENT & PAGES",
+        "MARKETING & LEADS",
+        "SYSTEM & GOVERNANCE",
+        "SETTINGS",
+        "YYYY",
+        "MAHK ▾",
+        "LABEL / ITEM",
+        "COMPONENT"
+      ],
+      "allCapsCount": 18,
+      "arrowSpam": [],
+      "contrastFailuresCount": 147,
+      "contrastFailuresSample": [
+        {
+          "text": "Landing Page CMS",
+          "fontSize": 12,
+          "ratio": 1,
+          "fg": "#FFFFFF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "CONTENT & PAGES",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "MARKETING & LEADS",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "SYSTEM & GOVERNANCE",
+          "fontSize": 10,
+          "ratio": 2.2,
+          "fg": "#AFAFAF",
+          "bg": "#FFFFFF",
+          "minReq": 4.5
+        },
+        {
+          "text": "Common Components",
+          "fontSize": 14,
+          "ratio": 2.7,
+          "fg": "#FFFFFF",
+          "bg": "#FF7434",
+          "minReq": 4.5
+        }
+      ],
+      "sampleCells": [
+        {
+          "name": "TH [LABEL / ITEM]",
+          "align": "LEFT",
+          "text": "LABEL / ITEM",
+          "h": 40
+        },
+        {
+          "name": "TH [COMPONENT]",
+          "align": "LEFT",
+          "text": "COMPONENT",
+          "h": 40
+        },
+        {
+          "name": "TH [DESTINATION]",
+          "align": "LEFT",
+          "text": "DESTINATION",
+          "h": 40
+        },
+        {
+          "name": "TH [OPEN MODE]",
+          "align": "LEFT",
+          "text": "OPEN MODE",
+          "h": 40
+        },
+        {
+          "name": "TH [VISIBILITY]",
+          "align": "LEFT",
+          "text": "VISIBILITY",
+          "h": 40
+        },
+        {
+          "name": "TH [ORDER]",
+          "align": "LEFT",
+          "text": "ORDER",
+          "h": 40
+        }
+      ],
+      "badgeCount": 135,
+      "sampleBadges": [
+        {
+          "name": "Badge",
+          "label": "5",
+          "fill": ""
+        },
+        {
+          "name": "Badge / W15-01..07",
+          "label": "W15-01..07",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        },
+        {
+          "name": "Badge",
+          "label": "B",
+          "fill": ""
+        },
+        {
+          "name": ".badge-label",
+          "label": "B",
+          "fill": "#18A13E"
+        },
+        {
+          "name": "badge-supporting-dot",
+          "label": "",
+          "fill": ""
+        }
+      ],
+      "buttonCount": 256,
+      "sampleButtons": [
+        {
+          "name": "Icon-button",
+          "label": ""
+        },
+        {
+          "name": "Button",
+          "label": "Corporate Web Pages"
+        },
+        {
+          "name": "Button",
+          "label": "Campaigns"
+        },
+        {
+          "name": "Button",
+          "label": "Banners & Popups"
+        },
+        {
+          "name": "Button",
+          "label": "Forms & Leads"
+        },
+        {
+          "name": "Button",
+          "label": "SEO & Analytics"
+        }
+      ]
+    }
+  ],
+  "resultAnalysis": {
+    "type": "object",
+    "isNull": false,
+    "isUndefined": false,
+    "isEmpty": false,
+    "warning": null
+  },
+  "fileContext": {
+    "fileName": "[Admin] MASHK - Design System",
+    "fileKey": "1bkQMosF8oqtOPhJIxJMk4"
+  }
+}

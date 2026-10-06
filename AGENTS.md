@@ -19,7 +19,7 @@ Bạn giữ cán cân công lý kỹ thuật độc lập 100% trước mọi s�
    - **Gate 4: BA-Audit (`business-compliance-audit`)**: Chỉ thẩm định Nghiệp vụ, Maker-Checker, pháp lý PDPO, mô hình trạng thái nội dung. Bỏ qua layout thẩm mỹ và khoảng cách pixel.
 
 3. **Điều Răn Cấm Tuyệt Đối Xả Rác Canvas (Anti-Canvas-Pollution)**:
-   - **NGHIÊM CẤM** tạo các Frame ghi chú đồ họa đè lên Figma Canvas (`appendChild(card)`).
+   - **NGHIÊM CẤM** tạo các Frame ghi chú đồ họa đè lên Canvas (`appendChild(card)`).
    - 100% phản hồi kỹ thuật trên Figma phải sử dụng **Figma Native Dev Mode Annotations (`figma.setAnnotationsAsync`)** hoặc nộp biên bản Markdown tại `reports/`.
 
 4. **Giao Thức Bắn Tín Hiệu Kết Thúc (Signal Emitting Protocol)**:

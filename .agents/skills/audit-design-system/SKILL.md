@@ -39,45 +39,33 @@ Nhiệm vụ tối thượng: Bảo vệ sự toàn vẹn của Hệ thống Thi
 
 ---
 
-## 🎨 3. Quy Trình Xuất Thẻ Ghi Chú Đồ Họa Lên Canvas (`[DS-Audit-Notes]`)
+## 🗺️ 3. Phân Hệ Tiêu Chuẩn Theo Từng Domain (Domain Standards)
+Khi nhận diện mục tiêu thẩm định, Agent bắt buộc nạp tài liệu tiêu chuẩn tương ứng:
+* **🏢 ADMIN**: [domains/admin-ds.md](file:///D:/Github/Design-Audit-Hub/.agents/skills/audit-design-system/domains/admin-ds.md) (Bộ 5 Invariants Data Grid, Cell Whitelisting `3913:54247`, Table Row FILL, Token Semantic Badge).
+* **📱 MTS**: [standards/01-design-system/ds-mts.md](file:///D:/Github/Design-Audit-Hub/standards/01-design-system/ds-mts.md) (OrderPad sheet, Keypad ảo, Steppers).
+* **🖥️ WTS**: [standards/01-design-system/ds-wts.md](file:///D:/Github/Design-Audit-Hub/standards/01-design-system/ds-wts.md) (Docking workspace, OrderBook ladder).
+* **🚀 LANDING**: [standards/01-design-system/ds-landing.md](file:///D:/Github/Design-Audit-Hub/standards/01-design-system/ds-landing.md) (Standalone tokens, Hero section).
 
-Khi phát hiện vi phạm, Agent chạy đoạn script sau trong `figma_execute` để ghim thẻ chú thích trực tiếp bên cạnh màn hình:
+---
 
+## 🏷️ 4. Quy Chuẩn Đánh Dấu Lỗi Bằng Native Dev Mode Annotations (CẤM XẢ RÁC CANVAS)
+
+> **CẢNH BÁO BẤT DI BẤT DỊCH**: TUYỆT ĐỐI CẤM dùng `createFrame` tạo các hộp note dán đè lên Canvas (`appendChild(card)`). Hành vi này làm hỏng cấu trúc canvas và phá vỡ bố cục Section.
+
+Khi phát hiện vi phạm, Agent BẮT BUỘC sử dụng **Figma Native Dev Mode Annotations**:
 ```javascript
 (async () => {
-  const target = await figma.getNodeByIdAsync('<SCREEN_NODE_ID>');
+  const target = await figma.getNodeByIdAsync('<SCREEN_OR_ELEMENT_NODE_ID>');
   if (!target) return;
-  await figma.loadFontAsync({ family: "Inter", style: "Bold" });
-  await figma.loadFontAsync({ family: "Inter", style: "Regular" });
 
-  const card = figma.createFrame();
-  card.name = `[DS-Audit-Notes] ${target.name}`;
-  card.resize(320, 220);
-  card.x = target.x + target.width + 32;
-  card.y = target.y;
-  card.fills = [{ type: 'SOLID', color: { r: 0.08, g: 0.07, b: 0.12 } }];
-  card.cornerRadius = 12;
-  card.strokes = [{ type: 'SOLID', color: { r: 0.65, g: 0.35, b: 0.95 } }]; // Purple border
-  card.strokeWeight = 1.5;
-  card.layoutMode = 'VERTICAL';
-  card.paddingTop = card.paddingBottom = card.paddingLeft = card.paddingRight = 16;
-  card.itemSpacing = 8;
-
-  const title = figma.createText();
-  title.characters = `📐 DS Audit: ${target.name}`;
-  title.fontName = { family: "Inter", style: "Bold" };
-  title.fontSize = 14;
-  title.fills = [{ type: 'SOLID', color: { r: 1, g: 1, b: 1 } }];
-  card.appendChild(title);
-
-  const body = figma.createText();
-  body.characters = `• Tỷ lệ Component: 92% (TRƯỢT - Yêu cầu >= 95%)\n• Phát hiện 3 nút bị Detach component\n• 2 Text node chưa link Color Token`;
-  body.fontName = { family: "Inter", style: "Regular" };
-  body.fontSize = 12;
-  body.fills = [{ type: 'SOLID', color: { r: 0.8, g: 0.85, b: 0.9 } }];
-  card.appendChild(body);
-
-  target.parent.appendChild(card);
+  await figma.setAnnotationsAsync([
+    {
+      nodeId: target.id,
+      label: "GATE-1: DS VIOLATION",
+      notes: "• Tỷ lệ Component: 91% (TRƯỢT - Yêu cầu >= 95%)\n• 3 Text node chưa gắn textStyleId\n• Hàng bảng có layoutSizingHorizontal !== FILL\n• Master Component chuẩn cần dùng: Building-Blocks/table-cell (3913:54247)",
+      category: "AUDIT"
+    }
+  ]);
 })();
 ```
 
@@ -96,3 +84,12 @@ Khi phát hiện vi phạm, Agent chạy đoạn script sau trong `figma_execute
 * **Liên kết Thư viện & Cấm Detach**: 20 điểm.
 * **Chuẩn Naming & Tổ chức Layer**: 10 điểm.
 * 👉 **Ngưỡng Đạt**: $\ge 90/100$ điểm.
+
+---
+
+## 📡 5. Quy Chuẩn Bắn Tín Hiệu Kết Thúc (Signal Emitting Protocol)
+Sau khi ghi xong báo cáo Markdown tại `reports/`, Agent BẮT BUỘC chạy lệnh phát tín hiệu để thông báo ngay cho Thư ký:
+```powershell
+powershell -ExecutionPolicy Bypass -File tools\emit-signal.ps1 -TaskId "<TASK_ID>" -Type AUDIT_DONE -Status "<PASS|FAIL>" -Score "<SCORE>" -ReportFile "<REPORT_PATH>" -Summary "<TÓM TẮT KẾT QUẢ>"
+```
+Tín hiệu này giúp Thư ký nhận diện kết quả tự động mà không cần Người dùng phải can thiệp thủ công.

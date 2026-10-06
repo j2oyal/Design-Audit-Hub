@@ -126,8 +126,8 @@ if (!$isFailFastTriggered -and ($Gate -eq "All" -or $Gate -eq "UX")) {
 
 # ----------------- GATE 4: FINANCIAL BUSINESS COMPLIANCE -----------------
 if (!$isFailFastTriggered -and ($Gate -eq "All" -or $Gate -eq "BA")) {
-    Write-Host "`n>>> [GATE 4 / 4] THAM DINH NGHIEP VU TAI CHINH & PHAP LY..." -ForegroundColor Cyan
-    $ba = & "$AuditRoot\core\run-ba-audit.ps1" -Target $Target -NoInteractive
+    Write-Host "`n>>> [GATE 4 / 4] THAM DINH NGHIEP VU TAI CHINH & PHAP LY ($Profile)..." -ForegroundColor Cyan
+    $ba = & "$AuditRoot\core\run-ba-audit.ps1" -Target $Target -Profile $Profile -NoInteractive
 
     $gateResults["BA"] = [PSCustomObject]@{
         Gate = "GATE 4: BA-Audit"

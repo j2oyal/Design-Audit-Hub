@@ -1,0 +1,2343 @@
+{
+  "success": true,
+  "result": {
+    "sectionId": "25493:60175",
+    "sectionName": "02. MVP Screens (Mockup UI)",
+    "screensCount": 30,
+    "audits": [
+      {
+        "id": "25493:60176",
+        "name": "A01 – Corporate Web Pages (Page List)",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 250,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          1.5,
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 13,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 150,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Corporate Web Pages",
+            "fontSize": 14,
+            "ratio": 1,
+            "textHex": "#FF7434",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 6,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 251,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 158,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-01",
+            "label": "W12-01",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W10-06",
+            "label": "W10-06",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25493:76949",
+        "name": "A00 – Analytics Dashboard",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 351,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          28,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          1.5,
+          4,
+          8,
+          10,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 20,
+          "arrowSpamCount": 1,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 193,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Corporate Web Pages",
+            "fontSize": 14,
+            "ratio": 4.3,
+            "textHex": "#797979",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 21,
+        "rowHeightMode": "Standard (36-40px)",
+        "buttonsCount": 364,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 215,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge [W13-07]",
+            "label": "W13-07",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": ".badge-label",
+            "label": "W13-07",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25493:79195",
+        "name": "A10 – Forms & Leads",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 271,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 13,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 146,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "MARKETING & LEADS",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 11,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 257,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 12
+          }
+        ],
+        "badgesCount": 143,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W6/W8",
+            "label": "W6/W8",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Field: Status",
+            "label": "Status",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "TH [STATUS]",
+            "label": "STATUS",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25493:83896",
+        "name": "A01 – Corporate Web Pages_ Create Modal",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 281,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          1.5,
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 13,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 162,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Corporate Web Pages",
+            "fontSize": 14,
+            "ratio": 1,
+            "textHex": "#FF7434",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 8,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 261,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 190,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-01",
+            "label": "W12-01",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W10-06",
+            "label": "W10-06",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25493:94162",
+        "name": "A03 – Campaigns",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 311,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          1.5,
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 14,
+          "arrowSpamCount": 1,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 184,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Campaigns Management",
+            "fontSize": 14,
+            "ratio": 1,
+            "textHex": "#FF7434",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 7,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 289,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns Management",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 196,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W7",
+            "label": "W7",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-01",
+            "label": "W12-01",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25493:98800",
+        "name": "A04 – Banners & Popups",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 211,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 12,
+          "arrowSpamCount": 1,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 123,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Banners & Popups Manageme",
+            "fontSize": 14,
+            "ratio": 1,
+            "textHex": "#FF7434",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 8,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 186,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups Management",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 98,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-03",
+            "label": "W12-03",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-04",
+            "label": "W12-04",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25502:39392",
+        "name": "A02 – Pages / Page Editor",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 124,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          28
+        ],
+        "maxFont": 28,
+        "minFont": 10,
+        "scaleRatio": 2.8,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          1.5,
+          4,
+          6,
+          8,
+          12,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 8,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 75,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Corporate Web Pages",
+            "fontSize": 14,
+            "ratio": 1,
+            "textHex": "#FF7434",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 4,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 52,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 100,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-01",
+            "label": "W12-01",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-05",
+            "label": "W12-05",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25504:47809",
+        "name": "A05 – Media Library / Publishing",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 149,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22
+        ],
+        "maxFont": 22,
+        "minFont": 10,
+        "scaleRatio": 2.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 13,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 91,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Campaigns",
+            "fontSize": 14,
+            "ratio": 4.3,
+            "textHex": "#797979",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 7,
+        "rowHeightMode": "Standard (36-40px)",
+        "buttonsCount": 121,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 76,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-05",
+            "label": "W12-05",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-06",
+            "label": "W12-06",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25504:49986",
+        "name": "A06 – SEO & Analytics / Localization",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 122,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22
+        ],
+        "maxFont": 22,
+        "minFont": 10,
+        "scaleRatio": 2.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 8,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 71,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Campaigns",
+            "fontSize": 14,
+            "ratio": 4.3,
+            "textHex": "#797979",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 8,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 27,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 17,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W10-01..06",
+            "label": "W10-01..06",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W13-01..06",
+            "label": "W13-01..06",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25504:51594",
+        "name": "A07 – Workflow / Approval",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 154,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22
+        ],
+        "maxFont": 22,
+        "minFont": 10,
+        "scaleRatio": 2.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 15,
+          "arrowSpamCount": 2,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 87,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Campaigns",
+            "fontSize": 14,
+            "ratio": 4.3,
+            "textHex": "#797979",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 7,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 140,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 77,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-02",
+            "label": "W12-02",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-07",
+            "label": "W12-07",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25504:53465",
+        "name": "A08 – Roles & Permissions",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 330,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22
+        ],
+        "maxFont": 22,
+        "minFont": 10,
+        "scaleRatio": 2.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 25,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 174,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Campaigns",
+            "fontSize": 14,
+            "ratio": 4.3,
+            "textHex": "#797979",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 13,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 382,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 210,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W12-08",
+            "label": "W12-08",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "TH [STATUS]",
+            "label": "STATUS",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge",
+            "label": "B",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25504:57810",
+        "name": "A09 – Structured Content",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 270,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 12,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 154,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "Structured Content",
+            "fontSize": 14,
+            "ratio": 2.7,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 11,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 257,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Structured Content",
+            "radius": 12
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 0
+          }
+        ],
+        "badgesCount": 143,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W1/W2/W5",
+            "label": "W1/W2/W5",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Field: Status",
+            "label": "Status",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "TH [STATUS]",
+            "label": "STATUS",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25504:63264",
+        "name": "A11 – Legal & Compliance",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 269,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 14,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 145,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "MARKETING & LEADS",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 8,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 257,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 12
+          }
+        ],
+        "badgesCount": 143,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W9-01..08",
+            "label": "W9-01..08",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Field: Status",
+            "label": "Status",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "TH [STATUS]",
+            "label": "STATUS",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25504:67455",
+        "name": "A12 – Search & Discovery",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 276,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 14,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 148,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "MARKETING & LEADS",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 10,
+        "rowHeightMode": "Relaxed (48px+)",
+        "buttonsCount": 256,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 12
+          }
+        ],
+        "badgesCount": 139,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W11-01..09",
+            "label": "W11-01..09",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge",
+            "label": "B",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": ".badge-label",
+            "label": "B",
+            "fill": "#18A13E",
+            "radius": 4
+          }
+        ]
+      },
+      {
+        "id": "25506:71009",
+        "name": "A13 – Common Components & Links",
+        "width": 1440,
+        "height": 1020,
+        "textCount": 272,
+        "fontSizes": [
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          32
+        ],
+        "maxFont": 32,
+        "minFont": 10,
+        "scaleRatio": 3.2,
+        "hasClearHierarchy": true,
+        "cornerRadii": [
+          4,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 18,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 145,
+        "contrastIssuesSample": [
+          {
+            "text": "Landing Page CMS",
+            "fontSize": 12,
+            "ratio": 1,
+            "textHex": "#FFFFFF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "CONTENT & PAGES",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          },
+          {
+            "text": "MARKETING & LEADS",
+            "fontSize": 10,
+            "ratio": 2.2,
+            "textHex": "#AFAFAF",
+            "minRequired": 4.5
+          }
+        ],
+        "tableRowCount": 8,
+        "rowHeightMode": "Standard (36-40px)",
+        "buttonsCount": 256,
+        "buttonsSample": [
+          {
+            "name": "Icon-button",
+            "label": "",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Corporate Web Pages",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Campaigns",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Banners & Popups",
+            "radius": 0
+          },
+          {
+            "name": "Button",
+            "label": "Forms & Leads",
+            "radius": 12
+          }
+        ],
+        "badgesCount": 136,
+        "badgesSample": [
+          {
+            "name": "Badge",
+            "label": "5",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge / W15-01..07",
+            "label": "W15-01..07",
+            "fill": "#18A13E",
+            "radius": 20
+          },
+          {
+            "name": "badge-supporting-dot",
+            "label": "",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Field: Status",
+            "label": "Status",
+            "fill": "",
+            "radius": 0
+          },
+          {
+            "name": "Badge",
+            "label": "B",
+            "fill": "",
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "id": "25518:83105",
+        "name": "[UX-Usability-Audit-Notes] A00 – Analytics Dashboard",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83110",
+        "name": "[UX-Usability-Audit-Notes] A01 – Corporate Web Pages (Page List)",
+        "width": 420,
+        "height": 153,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83115",
+        "name": "[UX-Usability-Audit-Notes] A01 – Corporate Web Pages_ Create Modal",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83120",
+        "name": "[UX-Usability-Audit-Notes] A02 – Pages / Page Editor",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83125",
+        "name": "[UX-Usability-Audit-Notes] A03 – Campaigns",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83130",
+        "name": "[UX-Usability-Audit-Notes] A04 – Banners & Popups",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83135",
+        "name": "[UX-Usability-Audit-Notes] A05 – Media Library / Publishing",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83140",
+        "name": "[UX-Usability-Audit-Notes] A06 – SEO & Analytics / Localization",
+        "width": 420,
+        "height": 121,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83145",
+        "name": "[UX-Usability-Audit-Notes] A07 – Workflow / Approval",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83150",
+        "name": "[UX-Usability-Audit-Notes] A08 – Roles & Permissions",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83155",
+        "name": "[UX-Usability-Audit-Notes] A09 – Structured Content",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83160",
+        "name": "[UX-Usability-Audit-Notes] A10 – Forms & Leads",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83165",
+        "name": "[UX-Usability-Audit-Notes] A11 – Legal & Compliance",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83170",
+        "name": "[UX-Usability-Audit-Notes] A12 – Search & Discovery",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      },
+      {
+        "id": "25518:83175",
+        "name": "[UX-Usability-Audit-Notes] A13 – Common Components & Links",
+        "width": 420,
+        "height": 137,
+        "textCount": 3,
+        "fontSizes": [
+          11,
+          13
+        ],
+        "maxFont": 13,
+        "minFont": 11,
+        "scaleRatio": 1.18,
+        "hasClearHierarchy": false,
+        "cornerRadii": [
+          12
+        ],
+        "slopMetrics": {
+          "clayCreamCount": 0,
+          "neonSlopCount": 0,
+          "allCapsCount": 0,
+          "arrowSpamCount": 0,
+          "opaqueShadowCount": 0
+        },
+        "contrastIssuesCount": 0,
+        "contrastIssuesSample": [],
+        "tableRowCount": 0,
+        "rowHeightMode": "N/A",
+        "buttonsCount": 0,
+        "buttonsSample": [],
+        "badgesCount": 0,
+        "badgesSample": []
+      }
+    ]
+  },
+  "resultAnalysis": {
+    "type": "object",
+    "isNull": false,
+    "isUndefined": false,
+    "isEmpty": false,
+    "warning": null
+  },
+  "fileContext": {
+    "fileName": "[Admin] MASHK - Design System",
+    "fileKey": "1bkQMosF8oqtOPhJIxJMk4"
+  }
+}

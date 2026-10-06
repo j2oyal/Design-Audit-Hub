@@ -66,45 +66,33 @@ Nhiệm vụ: Đảm bảo mọi giao diện được tạo ra đều đạt đ�
 
 ---
 
-## 🎨 6. Quy Trình Xuất Thẻ Ghi Chú Đồ Họa Lên Canvas (`[UI-Visual-Audit-Notes]`)
+## 🗺️ 6. Phân Hệ Tiêu Chuẩn Theo Từng Domain (Domain Standards)
+Khi nhận diện mục tiêu thẩm định, Agent bắt buộc nạp tài liệu tiêu chuẩn tương ứng:
+* **🏢 ADMIN**: [domains/admin-ui.md](file:///D:/Github/Design-Audit-Hub/.agents/skills/ui-visual-audit/domains/admin-ui.md) (Mật độ 28/36/48px, Căn lề số học phải 100% + tabular-nums, Semantic color palette, Destructive modal).
+* **📱 MTS**: [standards/02-ui-craft/ui-mts-standards.md](file:///D:/Github/Design-Audit-Hub/standards/02-ui-craft/ui-mts-standards.md) (Touch target >= 44px, Dual-coding P&L, Contrast ngoài trời).
+* **🖥️ WTS**: [standards/02-ui-craft/ui-wts-standards.md](file:///D:/Github/Design-Audit-Hub/standards/02-ui-craft/ui-wts-standards.md) (Dark mode siêu đặc, Micro-polish Vercel).
+* **🚀 LANDING**: [standards/02-ui-craft/ui-landing-standards.md](file:///D:/Github/Design-Audit-Hub/standards/02-ui-craft/ui-landing-standards.md) (7 Nếp gấp CRO, Khoảng thở 120-160px, Glassmorphism).
 
-Khi phát hiện lỗi thẩm mỹ hoặc AI-slop, Agent chạy đoạn script sau trong `figma_execute` để tạo thẻ Cyan trực quan cạnh màn hình:
+---
 
+## 🏷️ 7. Quy Chuẩn Đánh Dấu Lỗi Bằng Native Dev Mode Annotations (CẤM XẢ RÁC CANVAS)
+
+> **CẢNH BÁO BẤT DI BẤT DỊCH**: TUYỆT ĐỐI CẤM dùng `createFrame` tạo các hộp note dán đè lên Canvas (`appendChild(card)`).
+
+Khi phát hiện vi phạm mỹ thuật UI hoặc AI-slop, Agent BẮT BUỘC sử dụng **Figma Native Dev Mode Annotations**:
 ```javascript
 (async () => {
-  const target = await figma.getNodeByIdAsync('<SCREEN_NODE_ID>');
+  const target = await figma.getNodeByIdAsync('<SCREEN_OR_ELEMENT_NODE_ID>');
   if (!target) return;
-  await figma.loadFontAsync({ family: "Inter", style: "Bold" });
-  await figma.loadFontAsync({ family: "Inter", style: "Regular" });
 
-  const card = figma.createFrame();
-  card.name = `[UI-Visual-Audit-Notes] ${target.name}`;
-  card.resize(320, 220);
-  card.x = target.x + target.width + 32;
-  card.y = target.y;
-  card.fills = [{ type: 'SOLID', color: { r: 0.05, g: 0.08, b: 0.12 } }];
-  card.cornerRadius = 12;
-  card.strokes = [{ type: 'SOLID', color: { r: 0.02, g: 0.75, b: 0.85 } }]; // Cyan border
-  card.strokeWeight = 1.5;
-  card.layoutMode = 'VERTICAL';
-  card.paddingTop = card.paddingBottom = card.paddingLeft = card.paddingRight = 16;
-  card.itemSpacing = 8;
-
-  const title = figma.createText();
-  title.characters = `🎨 UI Visual Audit: ${target.name}`;
-  title.fontName = { family: "Inter", style: "Bold" };
-  title.fontSize = 14;
-  title.fills = [{ type: 'SOLID', color: { r: 1, g: 1, b: 1 } }];
-  card.appendChild(title);
-
-  const body = figma.createText();
-  body.characters = `• Cân bằng quang học: Đạt 88/100 (PASS)\n• Bo góc đồng tâm: Đạt Rcha = Rcon + Pad\n• Cảnh báo: Tiêu đề thiếu text-wrap balance`;
-  body.fontName = { family: "Inter", style: "Regular" };
-  body.fontSize = 12;
-  body.fills = [{ type: 'SOLID', color: { r: 0.8, g: 0.85, b: 0.9 } }];
-  card.appendChild(body);
-
-  target.parent.appendChild(card);
+  await figma.setAnnotationsAsync([
+    {
+      nodeId: target.id,
+      label: "GATE-2: UI VISUAL VIOLATION",
+      notes: "• Cân bằng quang học: Đạt 88/100\n• Vi phạm căn lề: Cột số tiền chưa căn phải (yêu cầu align: RIGHT & tabular-nums)\n• Khắc phục: Điều chỉnh textAlignHorizontal = 'RIGHT' cho toàn bộ text ô số",
+      category: "AUDIT"
+    }
+  ]);
 })();
 ```
 

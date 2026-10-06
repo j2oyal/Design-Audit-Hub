@@ -28,57 +28,46 @@ Nhiệm vụ tối thượng: Đảm bảo số liệu tài chính trên bản v
 
 ---
 
-## 🎨 3. Quy Trình Xuất Thẻ Ghi Chú Đồ Họa Lên Canvas (`[BA-Compliance-Audit-Notes]`)
+## 🗺️ 3. Phân Hệ Tiêu Chuẩn Theo Từng Domain (Domain Standards)
+Khi nhận diện mục tiêu thẩm định, Agent bắt buộc nạp tài liệu tiêu chuẩn tương ứng:
+* **🏢 ADMIN**: [domains/admin-ba.md](file:///D:/Github/Design-Audit-Hub/.agents/skills/business-compliance-audit/domains/admin-ba.md) (Quy tắc 4 mắt Maker-Checker, Field integrity A01_M sang A02, PDPO HK Privacy, Content State Machine. CẤM BẮT LỖI HKEX SPREAD).
+* **📱 MTS**: [standards/04-ba-business/ba-mts.md](file:///D:/Github/Design-Audit-Hub/standards/04-ba-business/ba-mts.md) (Quy chế HKEX 503, Chuẩn số 3-3-2, Margin Rtt).
+* **🖥️ WTS**: [standards/04-ba-business/ba-wts.md](file:///D:/Github/Design-Audit-Hub/standards/04-ba-business/ba-wts.md) (Crossed Book B<A, Lệnh Iceberg, OCO).
+* **🚀 LANDING**: [standards/04-ba-business/ba-landing.md](file:///D:/Github/Design-Audit-Hub/standards/04-ba-business/ba-landing.md) (Cảnh báo rủi ro đầu tư, Điều khoản dịch vụ).
 
-Khi phát hiện lỗi số học hoặc vi phạm quy chế sàn, Agent chạy đoạn script sau trong `figma_execute` để tạo thẻ Emerald trực quan cạnh màn hình:
+---
 
+## 🏷️ 4. Quy Chuẩn Đánh Dấu Lỗi Bằng Native Dev Mode Annotations (CẤM XẢ RÁC CANVAS)
+
+> **CẢNH BÁO BẤT DI BẤT DỊCH**: TUYỆT ĐỐI CẤM dùng `createFrame` tạo các hộp note dán đè lên Canvas (`appendChild(card)`).
+
+Khi phát hiện lỗi số học hoặc vi phạm quy chế quản trị, Agent BẮT BUỘC sử dụng **Figma Native Dev Mode Annotations**:
 ```javascript
 (async () => {
-  const target = await figma.getNodeByIdAsync('<SCREEN_NODE_ID>');
+  const target = await figma.getNodeByIdAsync('<SCREEN_OR_ELEMENT_NODE_ID>');
   if (!target) return;
-  await figma.loadFontAsync({ family: "Inter", style: "Bold" });
-  await figma.loadFontAsync({ family: "Inter", style: "Regular" });
 
-  const card = figma.createFrame();
-  card.name = `[BA-Compliance-Audit-Notes] ${target.name}`;
-  card.resize(320, 240);
-  card.x = target.x + target.width + 32;
-  card.y = target.y;
-  card.fills = [{ type: 'SOLID', color: { r: 0.04, g: 0.10, b: 0.08 } }];
-  card.cornerRadius = 12;
-  card.strokes = [{ type: 'SOLID', color: { r: 0.10, g: 0.75, b: 0.50 } }]; // Emerald Green border
-  card.strokeWeight = 1.5;
-  card.layoutMode = 'VERTICAL';
-  card.paddingTop = card.paddingBottom = card.paddingLeft = card.paddingRight = 16;
-  card.itemSpacing = 8;
-
-  const title = figma.createText();
-  title.characters = `⚖️ BA Compliance Audit: ${target.name}`;
-  title.fontName = { family: "Inter", style: "Bold" };
-  title.fontSize = 14;
-  title.fills = [{ type: 'SOLID', color: { r: 1, g: 1, b: 1 } }];
-  card.appendChild(title);
-
-  const body = figma.createText();
-  body.characters = `• Toán học tài chính: ĐẠT (Gross = Price * Qty)\n• Quy chế HKEX: Sai bước giá Tencent (385.25 vi phạm spread 0.20)\n• Cảnh báo: Volume thiếu 3 số lẻ (11.6M thay vì 11.650M)`;
-  body.fontName = { family: "Inter", style: "Regular" };
-  body.fontSize = 12;
-  body.fills = [{ type: 'SOLID', color: { r: 0.8, g: 0.95, b: 0.85 } }];
-  card.appendChild(body);
-
-  target.parent.appendChild(card);
+  await figma.setAnnotationsAsync([
+    {
+      nodeId: target.id,
+      label: "GATE-4: BA COMPLIANCE VIOLATION",
+      notes: "• Vi phạm Maker-Checker: Nút Approve chưa bị vô hiệu hóa khi xem bản ghi do chính mình tạo\n• Khắc phục: Thiết lập trạng thái disabled hoặc ẩn nút Approve nếu record.createdBy === currentUser.id kèm tooltip cảnh báo",
+      category: "AUDIT"
+    }
+  ]);
 })();
 ```
 
 ---
 
-## 🎯 4. Rubric Tự Chấm Điểm & Cổng Chặn Cứng (Thang 100)
+## 🎯 5. Rubric Tự Chấm Điểm & Cổng Chặn Cứng (Thang 100)
 
 ### 🚫 Cổng Chặn Cứng (Hard Blockers — Dính 1 lỗi = TỰ ĐỘNG REJECT):
-1. **Lỗi logic toán học nghiêm trọng (Unrealized P&L dương nhưng hiện màu đỏ, hoặc tính sai Gross Value)**.
-2. **Xuất hiện sổ lệnh lỗi Crossed Book (Giá Mua $\ge$ Giá Bán)**.
-3. **Vi phạm bước giá tối thiểu (Minimum Tick Size) của Sở giao dịch**.
-4. **Rò rỉ phạm vi (BA Leakage)**: Đi phán xét padding hay gu thẩm mỹ của Designer.
+1. **Vi phạm quy tắc 4 mắt Maker-Checker trên màn hình quản trị (ÁP DỤNG ADMIN)**.
+2. **Thiếu checkbox Privacy Consent hoặc vi phạm PDPO trên Form thu thập Leads (ÁP DỤNG ADMIN/LANDING)**.
+3. **Lỗi logic toán học nghiêm trọng (Unrealized P&L dương nhưng hiện màu đỏ) (ÁP DỤNG MTS/WTS)**.
+4. **Xuất hiện sổ lệnh lỗi Crossed Book (Giá Mua >= Giá Bán) (ÁP DỤNG MTS/WTS)**.
+5. **Rò rỉ phạm vi (BA Leakage)**: Đi phán xét padding hay gu thẩm mỹ của Designer.
 
 ### 📊 Thang Điểm Nghiệm Thu:
 * **Toán học tài chính & Tính toàn vẹn P&L**: 35 điểm.

@@ -28,55 +28,43 @@ Nhiệm vụ tối thượng: Đảm bảo luồng thao tác của người dùn
 
 ---
 
-## 🎨 3. Quy Trình Xuất Thẻ Ghi Chú Đồ Họa Lên Canvas (`[UX-Usability-Audit-Notes]`)
+## 🗺️ 3. Phân Hệ Tiêu Chuẩn Theo Từng Domain (Domain Standards)
+Khi nhận diện mục tiêu thẩm định, Agent bắt buộc nạp tài liệu tiêu chuẩn tương ứng:
+* **🏢 ADMIN**: [domains/admin-ux.md](file:///D:/Github/Design-Audit-Hub/.agents/skills/ux-usability-audit/domains/admin-ux.md) (3 Archetypes: Table/Form/Dashboard, Bulk actions, Unsaved guards, Poka-Yoke an toàn. CẤM BẮT LỖI THUMB ZONE).
+* **📱 MTS**: [standards/03-ux-usability/ux-mts.md](file:///D:/Github/Design-Audit-Hub/standards/03-ux-usability/ux-mts.md) (Thumb zone y >= 527px, Tap target 44px, Slide-to-confirm).
+* **🖥️ WTS**: [standards/03-ux-usability/ux-wts.md](file:///D:/Github/Design-Audit-Hub/standards/03-ux-usability/ux-wts.md) (Keyboard-first 90%+, F1/F2/Esc hotkeys).
+* **🚀 LANDING**: [standards/03-ux-usability/ux-landing.md](file:///D:/Github/Design-Audit-Hub/standards/03-ux-usability/ux-landing.md) (Attention ratio 1:1, Quy tắc 5s, Form friction).
 
-Khi phát hiện lỗi công thái học hoặc cản trở luồng tương tác, Agent chạy đoạn script sau trong `figma_execute` để tạo thẻ Blue trực quan cạnh màn hình:
+---
 
+## 🏷️ 4. Quy Chuẩn Đánh Dấu Lỗi Bằng Native Dev Mode Annotations (CẤM XẢ RÁC CANVAS)
+
+> **CẢNH BÁO BẤT DI BẤT DỊCH**: TUYỆT ĐỐI CẤM dùng `createFrame` tạo các hộp note dán đè lên Canvas (`appendChild(card)`).
+
+Khi phát hiện vi phạm công thái học hoặc cản trở luồng, Agent BẮT BUỘC sử dụng **Figma Native Dev Mode Annotations**:
 ```javascript
 (async () => {
-  const target = await figma.getNodeByIdAsync('<SCREEN_NODE_ID>');
+  const target = await figma.getNodeByIdAsync('<SCREEN_OR_ELEMENT_NODE_ID>');
   if (!target) return;
-  await figma.loadFontAsync({ family: "Inter", style: "Bold" });
-  await figma.loadFontAsync({ family: "Inter", style: "Regular" });
 
-  const card = figma.createFrame();
-  card.name = `[UX-Usability-Audit-Notes] ${target.name}`;
-  card.resize(320, 240);
-  card.x = target.x + target.width + 32;
-  card.y = target.y;
-  card.fills = [{ type: 'SOLID', color: { r: 0.05, g: 0.07, b: 0.15 } }];
-  card.cornerRadius = 12;
-  card.strokes = [{ type: 'SOLID', color: { r: 0.25, g: 0.45, b: 0.95 } }]; // Royal Blue border
-  card.strokeWeight = 1.5;
-  card.layoutMode = 'VERTICAL';
-  card.paddingTop = card.paddingBottom = card.paddingLeft = card.paddingRight = 16;
-  card.itemSpacing = 8;
-
-  const title = figma.createText();
-  title.characters = `🧠 UX Usability Audit: ${target.name}`;
-  title.fontName = { family: "Inter", style: "Bold" };
-  title.fontSize = 14;
-  title.fills = [{ type: 'SOLID', color: { r: 1, g: 1, b: 1 } }];
-  card.appendChild(title);
-
-  const body = figma.createText();
-  body.characters = `• Thumb Zone: ĐẠT (Nút Mua/Bán neo ở y >= 530px)\n• Cảnh báo: Nút Stepper trừ giá nhỏ (36x36px < 44px)\n• Poka-Yoke: Cần thêm Slide to confirm cho lệnh Margin`;
-  body.fontName = { family: "Inter", style: "Regular" };
-  body.fontSize = 12;
-  body.fills = [{ type: 'SOLID', color: { r: 0.8, g: 0.85, b: 0.9 } }];
-  card.appendChild(body);
-
-  target.parent.appendChild(card);
+  await figma.setAnnotationsAsync([
+    {
+      nodeId: target.id,
+      label: "GATE-3: UX VIOLATION",
+      notes: "• Phân loại Archetype: TABLE_GRID\n• Vi phạm: Thiếu Floating Bulk Action Bar khi chọn dòng\n• Khắc phục: Bổ sung thanh tác vụ nổi màu tối với các nút Hành động hàng loạt (Xuất bản, Gỡ bài, Xóa)",
+      category: "AUDIT"
+    }
+  ]);
 })();
 ```
 
 ---
 
-## 🎯 4. Rubric Tự Chấm Điểm & Cổng Chặn Cứng (Thang 100)
+## 🎯 5. Rubric Tự Chấm Điểm & Cổng Chặn Cứng (Thang 100)
 
 ### 🚫 Cổng Chặn Cứng (Hard Blockers — Dính 1 lỗi = TỰ ĐỘNG REJECT):
-1. **Nút hành động chính (Primary CTA) trên Mobile nằm ngoài tầm với ngón cái ($y < 527\text{px}$)**.
-2. **Nút tương tác quan trọng có diện tích chạm $< 44 \times 44\text{px}$ gây nguy cơ bấm trượt**.
+1. **Nút hành động chính (Primary CTA) trên Mobile nằm ngoài tầm với ngón cái (CHỈ ÁP DỤNG MTS)**.
+2. **Thiếu cơ chế Unsaved Changes Guard trên Form/Editor phức tạp (ÁP DỤNG ADMIN)**.
 3. **Áp dụng mẫu "Disabled Button mờ câm" (Silent Disabled CTA) mà không có thông điệp hướng dẫn lỗi**.
 4. **Rò rỉ phạm vi (UX Leakage)**: Đi bắt lỗi mã màu token hay phép tính nhân chia tài chính.
 
