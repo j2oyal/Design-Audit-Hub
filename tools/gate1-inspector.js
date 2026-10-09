@@ -95,6 +95,9 @@ async function run() {
       let tableNonInstanceCells = 0;
 
       function inspectDeep(n, parentIsInstance = false) {
+        // STRICT VISIBLE-ONLY: Loại trừ 100% layer ẩn hoặc opacity = 0
+        if (n.visible === false || (typeof n.opacity === 'number' && n.opacity === 0)) return;
+
         const isCurrentInstance = n.type === 'INSTANCE';
         const insideInstance = parentIsInstance || isCurrentInstance;
 

@@ -187,11 +187,11 @@ if ($ReportOutput) {
     $md = @"
 # 🛡️ BIÊN BẢN THẨM ĐỊNH BỘ TỨ CỔNG (QUAD-GATES AUDIT REPORT)
 
-- **Mục tiêu**: `$Target`
-- **Hồ sơ chuyên môn (Profile)**: `$Profile`
-- **Thời điểm thẩm định**: `$(Get-Date -Format "yyyy-MM-dd HH:mm:ss")`
-- **Chế độ**: `$Mode`
-- **Phán quyết cuối cùng**: **`$finalVerdict`**
+- **Mục tiêu**: `$($Target)`
+- **Hồ sơ chuyên môn (Profile)**: `$($Profile)`
+- **Thời điểm thẩm định**: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+- **Chế độ**: `$($Mode)`
+- **Phán quyết cuối cùng**: **`$($finalVerdict)`**
 
 ---
 

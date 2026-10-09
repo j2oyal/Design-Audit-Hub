@@ -16,7 +16,7 @@ export function isNodeVisible(node) {
 export function getVisibleNodes(root) {
   const result = [];
   function traverse(node) {
-    if (node.visible === false) return;
+    if (node.visible === false || (typeof node.opacity === 'number' && node.opacity === 0)) return;
     result.push(node);
     if ('children' in node && Array.isArray(node.children)) {
       for (const child of node.children) traverse(child);
