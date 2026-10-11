@@ -42,11 +42,11 @@ Chạy lệnh thẩm định thông qua PowerShell:
 
 ```powershell
 # 1. Thẩm định tự động nhận diện Profile
-.\audit.ps1 -Target "D:\Github\Admin-Design"
+.\audit.ps1 -Target "..\Admin-Design"
 
 # 2. Chỉ định Profile rõ ràng và xuất báo cáo markdown
-.\audit.ps1 -Target "D:\Github\MAPS-Design" -Profile MTS -ReportOutput "reports\REPORT-MTS.md"
+.\audit.ps1 -Target "..\MAPS-Design" -Profile MTS -ReportOutput "reports\REPORT-MTS.md"
 
 # 3. Kiểm định Landing Page Capsule
-.\audit.ps1 -Target "D:\Github\landingpage-builder\projects\my-capsule" -Profile Landingpage
+.\audit.ps1 -Target "..\landingpage-builder\projects\my-capsule" -Profile Landingpage
 ```

@@ -1,16 +1,15 @@
 <#
 .SYNOPSIS
-    BO PHAT TIN HIEU LIEN KHONG GIAN (CROSS-SPACE SIGNAL EMITTER)
+    Proxy phat tin hieu sang executive-secretary/tools/emit-signal.ps1
 .DESCRIPTION
-    Cong cu chuan hoa de cac Agent (Design-Audit-Hub, Admin-Design, executive-secretary)
-    phat tin hieu vao bus/signals/ sau khi hoan thanh nhiem vu.
+    Chuyen tiep tin hieu tu Design-Audit-Hub sang bus tap trung cua Thu ky.
 #>
 param(
     [Parameter(Mandatory=$true)]
     [string]$TaskId,
 
     [Parameter(Mandatory=$false)]
-    [ValidateSet("AUDIT_DONE", "REWORK_DONE", "TASK_DISPATCHED", "REWORK_DISPATCHED", "ARBITER_VERDICT")]
+    [ValidateSet("AUDIT_DONE", "REWORK_DONE", "TASK_DONE", "TASK_DISPATCHED", "REWORK_DISPATCHED", "ARBITER_VERDICT")]
     [string]$Type = "AUDIT_DONE",
 
     [Parameter(Mandatory=$false)]
@@ -18,7 +17,7 @@ param(
     [string]$Status = "PASS",
 
     [Parameter(Mandatory=$false)]
-    [string]$Source = "",
+    [string]$Source = "Design-Audit-Hub",
 
     [Parameter(Mandatory=$false)]
     [string]$Summary = "",
@@ -30,61 +29,27 @@ param(
     [string]$Score = "",
 
     [Parameter(Mandatory=$false)]
-    [string]$FailedNodes = ""
+    [string]$FailedNodes = "",
+
+    [Parameter(Mandatory=$false)]
+    [string]$TicketId = ""
 )
 
-$SecretaryRoot = "D:\Github\executive-secretary"
-$SignalsDir = "$SecretaryRoot\bus\signals"
-
-if (!(Test-Path $SignalsDir)) {
-    New-Item -ItemType Directory -Force $SignalsDir | Out-Null
+$targetScript = Join-Path $PSScriptRoot "..\..\executive-secretary\tools\emit-signal.ps1"
+if (!(Test-Path $targetScript)) {
+    throw "Khong tim thay script emit-signal.ps1 tai $targetScript"
 }
 
-# Tu dong nhan dien nguon phat neu de trong
-if ([string]::IsNullOrWhiteSpace($Source)) {
-    $currentDir = (Get-Location).Path
-    if ($currentDir -match '(?i)Design-Audit-Hub') { $Source = "Design-Audit-Hub" }
-    elseif ($currentDir -match '(?i)Admin-Design') { $Source = "Admin-Design" }
-    elseif ($currentDir -match '(?i)MAPS-Design') { $Source = "MAPS-Design" }
-    elseif ($currentDir -match '(?i)executive-secretary') { $Source = "executive-secretary" }
-    else { $Source = "Unknown-Agent" }
+$splat = @{
+    TaskId      = $TaskId
+    Type        = $Type
+    Status      = $Status
+    Source      = if ([string]::IsNullOrWhiteSpace($Source)) { "Design-Audit-Hub" } else { $Source }
+    Summary     = $Summary
+    ReportFile  = $ReportFile
+    Score       = $Score
+    FailedNodes = $FailedNodes
+    TicketId    = $TicketId
 }
 
-$timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
-$signalId = "SIG-$timestamp-$TaskId-$Type"
-
-$signalData = [ordered]@{
-    signal_id   = $signalId
-    timestamp   = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
-    task_id     = $TaskId
-    source      = $Source
-    type        = $Type
-    status      = $Status
-    score       = $Score
-    summary     = $Summary
-    report_file = $ReportFile
-    failed_nodes= $FailedNodes
-    processed   = $false
-}
-
-$signalJson = $signalData | ConvertTo-Json -Depth 5
-$signalFile = Join-Path $SignalsDir "$signalId.json"
-
-[System.IO.File]::WriteAllText($signalFile, $signalJson, (New-Object System.Text.UTF8Encoding $true))
-
-Write-Host "================================================================================" -ForegroundColor Cyan
-Write-Host " [SIGNAL EMIT] PING-PONG CROSS-SPACE BUS" -ForegroundColor Yellow
-Write-Host " Signal ID : $signalId" -ForegroundColor White
-Write-Host " Source    : $Source -> Target: executive-secretary" -ForegroundColor Cyan
-Write-Host " Type/Stat : $Type | Status: $Status $(if($Score){"($Score)"})" -ForegroundColor $(if($Status -eq "PASS"){"Green"}elseif($Status -eq "WARNING"){"Yellow"}else{"Red"})
-if ($ReportFile) { Write-Host " Report    : $ReportFile" -ForegroundColor Gray }
-if ($Summary) { Write-Host " Summary   : $Summary" -ForegroundColor White }
-Write-Host " File Path : $signalFile" -ForegroundColor DarkGray
-Write-Host "================================================================================" -ForegroundColor Cyan
-
-return [PSCustomObject]@{
-    SignalId   = $signalId
-    SignalFile = $signalFile
-    Status     = $Status
-    TaskId     = $TaskId
-}
+& $targetScript @splat

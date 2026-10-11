@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Do luong ty le tai su dung Design System Component (> 95%).
 .DESCRIPTION
@@ -84,7 +84,7 @@ $justificationDetail = ""
 $candidateDocs = Get-ChildItem -Path $TargetDir -Recurse -Include README.md,briefing.md,audit-justification.md,TASK-*.md -Exclude node_modules,.git
 foreach ($doc in $candidateDocs) {
     $docText = Get-Content $doc.FullName -Raw -ErrorAction SilentlyContinue
-    if ($docText -match '(?i)\[?(COMPONENT_EXCEPTION_JUSTIFICATION|GIẢI TRÌNH NGOẠI LỆ COMPONENT)\]?[:\s]+(.+)') {
+    if ($docText -match '(?i)\[?(COMPONENT_EXCEPTION_JUSTIFICATION|GIáº¢I TRÃŒNH NGOáº I Lá»† COMPONENT)\]?[:\s]+(.+)') {
         $hasValidJustification = $true
         $justificationDetail = $matches[2].Trim().Substring(0, [Math]::Min(200, $matches[2].Trim().Length))
         break

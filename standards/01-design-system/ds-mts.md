@@ -2,7 +2,10 @@
 ## MOBILE TRADING SYSTEM COMPONENT SPECIFICATIONS (LEVEL 1)
 
 > **Cổng thẩm định**: GATE 1 (DS-Audit)  
-> **Dự án áp dụng**: MTS Mobile Apps (MASHK Mobile Trading).
+> **Dự án áp dụng**: `MAPS-Design` / MTS Mobile Apps (MASHK Mobile Trading).  
+> **Design Tokens**: MTS Design System [MASHK]  
+> **Required Component Adoption**: >= 95%  
+> **Pillars Reference**: `maps-seven-technical-pillars.md`  
 
 ---
 

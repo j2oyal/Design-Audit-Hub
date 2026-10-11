@@ -2,7 +2,10 @@
 ## MOBILE TRADING USABILITY & ERGONOMICS SPECIFICATIONS (LEVEL 1)
 
 > **Cổng thẩm định**: GATE 3 (UX-Audit)  
-> **Dự án áp dụng**: Ứng dụng giao dịch chứng khoán di động.
+> **Dự án áp dụng**: `MAPS-Design` / MTS Mobile Trading Apps.  
+> **Core Ergonomics**: One-thumb Zone trading, Virtual Numeric Keypad, Poka-Yoke order confirmation slider.  
+> **Rubric Reference**: `maps-trading-ux-rubric.md`  
+> **Matrix Reference**: `securities-business-matrix.md`  
 
 ---
 

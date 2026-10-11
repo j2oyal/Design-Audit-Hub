@@ -8,7 +8,12 @@
 ---
 
 ## ⛔ NGUYÊN TẮC CẤM RẬP KHUÔN (ANTI-TEMPLATE AUDIT POLICY)
-Auditor **TUYỆT ĐỐI KHÔNG ĐƯỢC** áp dụng chung một checklist mù quáng cho mọi màn hình. Bắt buộc phải nhận diện màn hình thuộc **1 trong 3 Nhóm Nguyên Mẫu (Archetypes)** dưới đây trước khi chấm điểm:
+Auditor **TUYỆT ĐỐI KHÔNG ĐƯỢC** áp dụng chung một checklist mù quáng cho mọi màn hình. Kiểm toán viên Gate 3 **TUYỆT ĐỐI KHÔNG ĐƯỢC**:
+* Ép màn hình Desktop Admin phải có Mobile Thumb Zone ($y \ge 527\text{px}$).
+* Ép form Admin phải kiểm tra va chạm bàn phím số ảo di động.
+* Đòi hỏi thanh tác vụ chọn nhiều dòng (Floating Action Bar) trên màn hình Dashboard hoặc Form chi tiết.
+
+Bắt buộc phải nhận diện màn hình thuộc **1 trong 3 Nhóm Nguyên Mẫu (Archetypes)** dưới đây trước khi chấm điểm:
 
 ```text
                   3 NHÓM NGUYÊN MẪU MÀN HÌNH ADMIN (UX ARCHETYPES)

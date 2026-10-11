@@ -3,16 +3,16 @@
 
 > **Cổng thẩm định**: GATE 4 (BA-Audit)  
 > **Dự án áp dụng**: Cổng Quản trị Vận hành, Content Management System (CMS), Giám sát Rủi ro & Pháp lý.  
-> **Tham chiếu chuẩn mực**: SFC Hong Kong Regulatory Standards, Hong Kong Personal Data (Privacy) Ordinance (PDPO), ISO 27001 Access Control, Sarbanes-Oxley (SOX) Segregation of Duties.
+> **Cấm Tuyệt Đối**: CẤM kiểm tra bước giá HKEX 503, lô chẵn Tencent hay khối lượng cổ phiếu trên giao diện Admin CMS!
 
 ---
 
 ## 🏛️ 1. PHÂN QUYỀN VAI TRÒ & NGUYÊN TẮC TÁCH BẠCH QUYỀN HẠN (RBAC & SEGREGATION OF DUTIES)
 
 1. **Quy Tắc 4 Mắt (Four-Eyes Principle / Maker-Checker)**:
-   - **Tách biệt tuyệt đối giữa Người Tạo (Author/Maker) và Người Duyệt (Approver/Checker)**: Nhân viên tạo hoặc chỉnh sửa bài viết/chiến dịch/biểu mẫu tuyệt đối bị vô hiệu hóa nút Duyệt (`Approve`) đối với chính bản ghi của mình.
+   - **Tách biệt tuyệt đối giữa Người Tạo (Author/Maker) và Người Duyệt (Approver/Checker)**: Nhân viên tạo hoặc chỉnh sửa bài viết/chiến dịch/biểu mẫu (`currentUser.id === record.createdBy`) tuyệt đối bị vô hiệu hóa hoặc ẩn nút Duyệt (`Approve`) đối với chính bản ghi của mình.
    - **Chuỗi thẩm quyền 3 lớp**: `Author` $\longrightarrow$ `Approver (Legal/Compliance)` $\longrightarrow$ `Publisher`.
-   - **Giao diện bắt buộc**: Nút `Approve` phải ở trạng thái Disabled hoặc ẩn đi nếu `currentUser.id === record.createdBy`, kèm tooltip cảnh báo rõ ràng.
+   - **Giao diện bắt buộc**: Trên màn hình danh sách phê duyệt `A07`, nút `Approve` phải ở trạng thái Disabled hoặc ẩn đi nếu `currentUser.id === record.createdBy`, kèm tooltip giải thích: *"Bạn không thể tự duyệt bản ghi do chính mình tạo"*.
 2. **Cách Ly Đa Thực Thể & Khu Vực (Multi-Entity & Geographic Isolation)**:
    - Hệ thống quản trị hỗ trợ đa quốc gia (HK, SG, VN) và đa thực thể (MAHK, MASG).
    - Quản trị viên chỉ được cấp quyền xem và chỉnh sửa dữ liệu thuộc phạm vi thẩm quyền (`Country Scope` & `Entity Scope`). Tuyệt đối cấm rò rỉ dữ liệu chéo giữa các pháp nhân.

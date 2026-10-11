@@ -2,7 +2,11 @@
 ## RETAIL TRADING COMPLIANCE & FINANCIAL RULES (LEVEL 1)
 
 > **Cổng thẩm định**: GATE 4 (BA-Audit)  
-> **Dự án áp dụng**: Ứng dụng giao dịch chứng khoán di động.
+> **Dự án áp dụng**: `MAPS-Design` / MTS Mobile Trading Apps.  
+> **Thị trường áp dụng (Markets)**: HKEX, HOSE, US, CN, KR  
+> **Công thức trọng yếu (Key Formulas)**: Margin Rtt, Call Margin, Force Sell, T+1.5 settlement, Multi-currency FX.  
+> **Rubric Reference**: `maps-business-audit-rubric.md`  
+> **Market Rules**: `market-rules-hk-us-cn-kr.md`  
 
 ---
 

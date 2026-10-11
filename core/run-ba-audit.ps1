@@ -3,13 +3,14 @@
     PANE 4: GATE 4 - FINANCIAL BUSINESS & COMPLIANCE AUDITOR (DOMAIN-AWARE)
 #>
 param(
-    [string]$Path = "D:\Github\Design-Audit-Hub",
+    [string]$Path = "",
     [string]$Target = "",
     [string]$Profile = "Auto",
     [switch]$Init,
     [switch]$NoInteractive
 )
 
+if ([string]::IsNullOrWhiteSpace($Path)) { $Path = Split-Path $PSScriptRoot -Parent }
 if ([string]::IsNullOrWhiteSpace($Target)) { $Target = $Path }
 if (Test-Path $Target) { Set-Location $Target }
 
@@ -87,7 +88,7 @@ if ($NoInteractive) {
 $isContinue = ($args -contains "-c") -or ($args -contains "--continue")
 if ($Init -and !$isContinue -and (Get-Command agy.exe -ErrorAction SilentlyContinue)) {
     if ($Profile -eq "Admin") {
-        $prompt = "Ban la Financial Compliance & Business Governance Auditor (Gate 4 tai Design-Audit-Hub). Muc tieu: $Target. Profile: ADMIN. Hay nap ky nang .agents/skills/business-compliance-audit va domain rule .agents/skills/business-compliance-audit/domains/admin-ba.md. TUYET DOI CAM kiem tra buoc gia HKEX 503 hay volume chung khoan tren Admin. Trong tam: Maker-Checker 4 mat, PDPO HK Privacy, Content State Machine va Audit Trail."
+        $prompt = "Ban la Financial Compliance & Business Governance Auditor (Gate 4 tai Design-Audit-Hub). Muc tieu: $Target. Profile: ADMIN. Hay nap ky nang .agents/skills/business-compliance-audit va tieu chuan standards/04-ba-business/ba-admin.md. Khong kiem tra buoc gia HKEX 503 hay volume chung khoan tren Admin. Trong tam: Maker-Checker 4 mat, PDPO HK Privacy, Content State Machine va Audit Trail."
     } else {
         $prompt = "Ban la Financial Compliance & Securities Business Auditor (Gate 4 tai Design-Audit-Hub). Muc tieu: $Target. Profile: $Profile. Hay nap ky nang .agents/skills/business-compliance-audit va tieu chuan standards/04-ba-business/ de tham dinh tinh toan gia tri lenh, P&L, bang buoc gia HKEX 503, lo chuan va co che Maker-Checker."
     }

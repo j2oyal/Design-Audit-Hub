@@ -3,13 +3,14 @@
     PANE 1: GATE 1 - DESIGN SYSTEM & TOKEN ARCHITECTURE AUDITOR (DOMAIN-AWARE)
 #>
 param(
-    [string]$Path = "D:\Github\Design-Audit-Hub",
+    [string]$Path = "",
     [string]$Target = "",
     [string]$Profile = "Auto",
     [switch]$Init,
     [switch]$NoInteractive
 )
 
+if ([string]::IsNullOrWhiteSpace($Path)) { $Path = Split-Path $PSScriptRoot -Parent }
 if ([string]::IsNullOrWhiteSpace($Target)) { $Target = $Path }
 if (Test-Path $Target) { Set-Location $Target }
 
@@ -53,7 +54,7 @@ if ($NoInteractive) {
 $isContinue = ($args -contains "-c") -or ($args -contains "--continue")
 if ($Init -and !$isContinue -and (Get-Command agy.exe -ErrorAction SilentlyContinue)) {
     if ($Profile -eq "Admin") {
-        $prompt = "Ban la Design System & Token Gatekeeper (Gate 1 tai Design-Audit-Hub). Muc tieu: $Target. Profile: ADMIN. Hay nap ky nang .agents/skills/audit-design-system va domain rule .agents/skills/audit-design-system/domains/admin-ds.md de kiem soat ty le Component >= 95%, do sach token 3 tang, Bo 5 chot chan Data Grid va Cell Whitelisting (Building-Blocks/table-cell: 3913:54247)."
+        $prompt = "Ban la Design System & Token Gatekeeper (Gate 1 tai Design-Audit-Hub). Muc tieu: $Target. Profile: ADMIN. Hay nap ky nang .agents/skills/audit-design-system va tieu chuan standards/01-design-system/ds-admin.md de kiem soat ty le Component >= 95%, do sach token 3 tang, Bo 5 chot chan Data Grid va Cell Whitelisting (Building-Blocks/table-cell: 3913:54247)."
     } else {
         $prompt = "Ban la Design System & Token Gatekeeper (Gate 1 tai Design-Audit-Hub). Muc tieu: $Target. Profile: $Profile. Hay nap ky nang .agents/skills/audit-design-system va tieu chuan standards/01-design-system/ de kiem soat ty le Component >= 95%, do sach token 3 tang va chong detach component."
     }

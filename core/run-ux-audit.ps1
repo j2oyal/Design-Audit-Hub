@@ -3,13 +3,14 @@
     PANE 3: GATE 3 - UX TRADING & USABILITY AUDITOR (DOMAIN-AWARE)
 #>
 param(
-    [string]$Path = "D:\Github\Design-Audit-Hub",
+    [string]$Path = "",
     [string]$Target = "",
     [string]$Profile = "Auto",
     [switch]$Init,
     [switch]$NoInteractive
 )
 
+if ([string]::IsNullOrWhiteSpace($Path)) { $Path = Split-Path $PSScriptRoot -Parent }
 if ([string]::IsNullOrWhiteSpace($Target)) { $Target = $Path }
 if (Test-Path $Target) { Set-Location $Target }
 
@@ -57,7 +58,7 @@ if ($NoInteractive) {
 $isContinue = ($args -contains "-c") -or ($args -contains "--continue")
 if ($Init -and !$isContinue -and (Get-Command agy.exe -ErrorAction SilentlyContinue)) {
     if ($Profile -eq "Admin") {
-        $prompt = "Ban la Senior UX & Usability Auditor (Gate 3 tai Design-Audit-Hub). Muc tieu: $Target. Profile: ADMIN. Hay nap ky nang .agents/skills/ux-usability-audit va domain rule .agents/skills/ux-usability-audit/domains/admin-ux.md. TUYET DOI CAM bat loi Mobile Thumb Zone hay ban phim ao tren Desktop Admin. Trong tam: 3 Archetypes (Table/Form/Dashboard), Bulk Action Bar, Unsaved Changes Guard va Poka-Yoke an toan."
+        $prompt = "Ban la Senior UX & Usability Auditor (Gate 3 tai Design-Audit-Hub). Muc tieu: $Target. Profile: ADMIN. Hay nap ky nang .agents/skills/ux-usability-audit va tieu chuan standards/03-ux-usability/ux-admin.md. Khong bat loi Mobile Thumb Zone hay ban phim ao tren Desktop Admin. Trong tam: 3 Archetypes (Table/Form/Dashboard), Bulk Action Bar, Unsaved Changes Guard va Poka-Yoke an toan."
     } else {
         $prompt = "Ban la Senior UX & Usability Auditor (Gate 3 tai Design-Audit-Hub). Muc tieu: $Target. Profile: $Profile. Hay nap ky nang .agents/skills/ux-usability-audit va tieu chuan standards/03-ux-usability/ de tham dinh cong thai hoc Thumb zone tren mobile, keyboard-first tren WTS, bulk actions tren Admin va CRO funnel tren Landing page."
     }

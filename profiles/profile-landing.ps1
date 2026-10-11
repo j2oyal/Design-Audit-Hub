@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Profile Tham Dinh: Landing Page (CRO Studio).
 #>
@@ -16,7 +16,7 @@ $checks = @(
     @{ Name = "Tep tin doc lap Standalone (index.html chay thang khong can node build)"; Pass = $false },
     @{ Name = "Vien nang doc lap Capsule Tokens (Co tokens.json hoac theme tokens rieng)"; Pass = $false },
     @{ Name = "Phan cap CTA ro rang (Primary CTA noi bat, Secondary CTA khong lan at)"; Pass = $false },
-    @{ Name = "Ban sac thi giac doc ban (Khong dính AI-slop, co tieu de balance)"; Pass = $false }
+    @{ Name = "Ban sac thi giac doc ban (Khong dÃ­nh AI-slop, co tieu de balance)"; Pass = $false }
 )
 
 foreach ($file in $sourceFiles) {

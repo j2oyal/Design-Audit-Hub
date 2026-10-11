@@ -7,17 +7,27 @@
 ---
 
 ## 🧩 1. DANH MỤC MASTER COMPONENTS BẮT BUỘC DÙNG
+Mọi phần tử trên màn hình Admin bắt buộc phải kế thừa trực tiếp từ thư viện Master Components:
 1. **`Admin-Data-Grid`**: Bảng dữ liệu enterprise hỗ trợ phân trang (Pagination), sắp xếp (Sort), chọn nhiều dòng (Multi-row selection), và xuất CSV.
-2. **`Admin-Filter-Bar`**: Thanh công cụ lọc đa tầng (`DateRangePicker`, `SelectFilter`, `SearchInput`, `ResetBtn`).
-3. **`Admin-Destructive-Dialog`**: Hộp thoại cảnh báo nguy hiểm 2 bước (bắt buộc nhập lý do hoặc gõ chữ xác nhận).
-4. **`Admin-Status-Badge`**: Huy hiệu trạng thái với 4 màu semantic chuẩn (`Active`, `Pending`, `Suspended`, `Draft`).
-5. **`Admin-Maker-Checker-Tag`**: Thẻ kiểm định hiển thị rõ danh tính người tạo (Maker) và người phê duyệt (Checker).
+2. **`❖ Markets Overview Table`** (`Node ID: 25431:200305`): Bảng danh mục thị trường mẫu.
+3. **`❖ Admin-Data-Grid (A11)`** (`Node ID: 25586:14686`): Khung bảng dữ liệu quản trị chuẩn.
+4. **`Admin-Filter-Bar`**: Thanh công cụ lọc đa tầng (`DateRangePicker`, `SelectFilter`, `SearchInput`, `ResetBtn`).
+5. **`Divider`** (`Node ID: 19839:0`): Đường kẻ phân cách sử dụng token `divider/solid-on-1-2`.
+6. **`Select-Input`**, **`Button`**, **`Admin-Status-Badge`**: Các thành phần điều khiển chuẩn.
+7. **`Admin-Destructive-Dialog`**: Hộp thoại cảnh báo nguy hiểm 2 bước (bắt buộc nhập lý do hoặc gõ chữ xác nhận).
+8. **`Admin-Maker-Checker-Tag`**: Thẻ kiểm định hiển thị rõ danh tính người tạo (Maker) và người phê duyệt (Checker).
 
 ---
 
 ## 🎨 2. QUY CHUẨN TOKEN RIÊNG CHO ADMIN
-* `badge-status-active`: `bg: #ECFDF5, text: #065F46` (Light) / `bg: rgba(16,185,129,0.1), text: #10B981` (Dark).
-* `badge-status-danger`: `bg: #FEF2F2, text: #991B1B` (Light) / `bg: rgba(239,68,68,0.1), text: #EF4444` (Dark).
+* **Nền Card**: `boundVariables.fills` liên kết với `surface/01`.
+* **Nền Table Header**: `boundVariables.fills` liên kết với `surface/02`.
+* **Đường kẻ / Viền**: Token `divider/solid-on-1-2` (`VariableID: a299887b6fb84d286b08b2bfc9951f3b42495b50/17369:129`).
+* **Huy hiệu Semantic Trạng Thái**:
+  - `Active / Settled`: Green semantic badge (`badge-status-active`: `bg: #ECFDF5, text: #065F46` Light / `bg: rgba(16,185,129,0.1), text: #10B981` Dark).
+  - `Pending / In Review`: Amber semantic badge (`bg: #FFFBEB, text: #92400E` Light / `bg: rgba(245,158,11,0.1), text: #F59E0B` Dark).
+  - `Suspended / Failed`: Red semantic badge (`badge-status-danger`: `bg: #FEF2F2, text: #991B1B` Light / `bg: rgba(239,68,68,0.1), text: #EF4444` Dark).
+  - `Draft / Inactive`: Slate gray semantic badge (`bg: #F8FAFC, text: #475569` Light / `bg: rgba(100,116,139,0.1), text: #94A3B8` Dark).
 * `modal-border-destructive`: `border: 2px solid rgba(239, 68, 68, 0.4)`.
 
 ---

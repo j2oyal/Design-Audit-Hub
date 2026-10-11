@@ -36,7 +36,7 @@ Người vận hành Backoffice chịu trách nhiệm duyệt hàng nghìn hồ 
 
 Bắt buộc tuân thủ nguyên tắc thị giác 3 cột:
 1. **Căn phải ($100\%$)**: Toàn bộ số liệu có thể so sánh hoặc cộng trừ (Giá trị giao dịch, Số dư tiền mặt, Hạn mức Margin, Lãi/Lỗ, Phí hoa hồng) kèm thuộc tính CSS `tabular-nums`.
-2. **Căn trái**: Văn bản diễn giải (Tên khách hàng, Email, Tên quỹ, Mã chứng khoán, Địa chỉ).
+2. **Căn trái**: Văn bản tên gọi, tiêu đề bài viết, email, URL slug, mô tả, Tên khách hàng, Tên quỹ, Mã chứng khoán, Địa chỉ.
 3. **Căn giữa**: Dữ liệu có độ dài cố định hoặc định danh (Số thứ tự `#`, Mã ISIN, Ngày tháng `YYYY-MM-DD`, Status Badges, Nút Action).
 
 ---
@@ -44,20 +44,21 @@ Bắt buộc tuân thủ nguyên tắc thị giác 3 cột:
 ## 🏷️ 3. MÃ MÀU SEMANTIC TRẠNG THÁI QUẢN TRỊ
 
 Tuyệt đối không dùng màu sắc trang trí tự do. Chỉ sử dụng 4 màu trạng thái chuẩn:
-* **Thành công / Hoạt động (Active / Settled)**: Xanh ngọc (`#10B981` / `#059669`).
+* **Thành công / Hoạt động / Xuất bản (Active / Published / Settled)**: Xanh ngọc Green semantic (`#10B981` / `#059669`).
 * **Chờ duyệt / Cảnh báo (Pending / In Review)**: Vàng hổ phách (`#F59E0B` / `#D97706`).
-* **Đình chỉ / Thất bại (Suspended / Failed)**: Đỏ rực (`#EF4444` / `#DC2626`).
+* **Đình chỉ / Thất bại / Từ chối (Suspended / Failed / Rejected / Danger)**: Đỏ rực Red semantic (`#EF4444` / `#DC2626`).
 * **Bản nháp / Vô hiệu (Draft / Inactive)**: Xám Slate (`#64748B` / `#475569`).
 
 ---
 
 ## 🚨 4. BẢO VỆ HÀNH ĐỘNG PHÁ HỦY (DESTRUCTIVE MODAL CONFIRMATION)
 
-* **Các hành động nhạy cảm**: Xóa tài khoản, Cưỡng chế bán cổ phiếu (Force-sell), Khóa đăng nhập, Tăng trần tín dụng.
+* **Các hành động nhạy cảm**: Xóa tài khoản / dữ liệu, Gỡ bài xuất bản, Khóa tài khoản / đăng nhập, Từ chối duyệt, Cưỡng chế bán cổ phiếu (Force-sell), Tăng trần tín dụng.
 * **Quy chuẩn hiển thị Modal Cảnh Báo**:
   1. Hộp thoại nổi bật với viền đỏ cảnh báo (`border-red-500/50`) và icon Tam giác Nguy hiểm.
-  2. Bắt buộc yêu cầu người dùng nhập lý do can thiệp (Reason text area) hoặc gõ lại từ xác nhận (ví dụ: gõ chữ `XÁC NHẬN`).
-  3. Áp dụng cơ chế **Maker-Checker**: Người khởi tạo yêu cầu không được phép tự phê duyệt yêu cầu của chính mình.
+  2. Bắt buộc yêu cầu người dùng nhập lý do can thiệp (Reason text area) để lưu vết kiểm toán (Audit Trail) hoặc gõ lại từ xác nhận (ví dụ: gõ chữ `XÁC NHẬN`).
+  3. Nút hành động chính mang biến thể `Destructive Solid Button` màu đỏ.
+  4. Áp dụng cơ chế **Maker-Checker**: Người khởi tạo yêu cầu không được phép tự phê duyệt yêu cầu của chính mình.
 
 ---
 

@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     DESIGN-AUDIT-HUB MASTER VERIFICATION RUNNER (QUAD-GATES PIPELINE)
 .DESCRIPTION
@@ -12,7 +12,7 @@ param(
     [Parameter(Mandatory=$true)]
     [string]$Target,
 
-    [ValidateSet("MTS", "WTS", "Admin", "Landingpage", "Auto")]
+    [ValidateSet("MTS", "WTS", "Admin", "Landingpage", "Landing", "Auto")]
     [string]$Profile = "Auto",
 
     [ValidateSet("Pipeline", "Gate")]
@@ -33,17 +33,19 @@ if (!(Test-Path $Target)) {
     exit 1
 }
 
-# Tu dong nhan dien Profile
+# Tu dong nhan dien Profile khi nhan Auto
 if ($Profile -eq "Auto") {
     if ($Target -match '(?i)MAPS-Design' -or $Target -match '(?i)MTS') { $Profile = "MTS" }
     elseif ($Target -match '(?i)WTS' -or $Target -match '(?i)WebTrading') { $Profile = "WTS" }
     elseif ($Target -match '(?i)Admin-Design' -or $Target -match '(?i)Backoffice') { $Profile = "Admin" }
     elseif ($Target -match '(?i)landingpage-builder' -or $Target -match '(?i)Landing') { $Profile = "Landingpage" }
     else { $Profile = "Universal" }
+} elseif ($Profile -eq "Landing") {
+    $Profile = "Landingpage"
 }
 
 Write-Host "================================================================================" -ForegroundColor Cyan
-Write-Host " 🛡️ DESIGN-AUDIT-HUB: BO TU CONG THAM DINH (QUAD-GATES VERIFICATION)" -ForegroundColor Yellow
+Write-Host " ðŸ›¡ï¸ DESIGN-AUDIT-HUB: BO TU CONG THAM DINH (QUAD-GATES VERIFICATION)" -ForegroundColor Yellow
 Write-Host " Muc tieu : $Target" -ForegroundColor White
 Write-Host " Profile  : $Profile" -ForegroundColor Cyan
 Write-Host " Che do   : $Mode $(if($Gate -ne 'All'){"[Gate: $Gate]"})" -ForegroundColor Yellow
@@ -110,7 +112,7 @@ if (!$isFailFastTriggered -and ($Gate -eq "All" -or $Gate -eq "UX")) {
     $ux = switch ($Profile) {
         "MTS" { & "$AuditRoot\profiles\profile-mts.ps1" -TargetDir $Target }
         "Admin" { & "$AuditRoot\profiles\profile-admin.ps1" -TargetDir $Target }
-        "Landingpage" { & "$AuditRoot\profiles\profile-landing.ps1" -TargetDir $Target }
+        { $_ -in "Landingpage", "Landing" } { & "$AuditRoot\profiles\profile-landing.ps1" -TargetDir $Target }
         Default { & "$AuditRoot\profiles\profile-wts.ps1" -TargetDir $Target }
     }
 
@@ -185,32 +187,32 @@ if ($ReportOutput) {
     }
 
     $md = @"
-# 🛡️ BIÊN BẢN THẨM ĐỊNH BỘ TỨ CỔNG (QUAD-GATES AUDIT REPORT)
+# ðŸ›¡ï¸ BIÃŠN Báº¢N THáº¨M Äá»ŠNH Bá»˜ Tá»¨ Cá»”NG (QUAD-GATES AUDIT REPORT)
 
-- **Mục tiêu**: `$($Target)`
-- **Hồ sơ chuyên môn (Profile)**: `$($Profile)`
-- **Thời điểm thẩm định**: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
-- **Chế độ**: `$($Mode)`
-- **Phán quyết cuối cùng**: **`$($finalVerdict)`**
+- **Má»¥c tiÃªu**: `$($Target)`
+- **Há»“ sÆ¡ chuyÃªn mÃ´n (Profile)**: `$($Profile)`
+- **Thá»i Ä‘iá»ƒm tháº©m Ä‘á»‹nh**: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+- **Cháº¿ Ä‘á»™**: `$($Mode)`
+- **PhÃ¡n quyáº¿t cuá»‘i cÃ¹ng**: **`$($finalVerdict)`**
 
 ---
 
-## 1. Kết Quả Bốn Cổng Thẩm Định (The Quad Gates)
-| Cổng Thẩm Định | Kết Quả |
+## 1. Káº¿t Quáº£ Bá»‘n Cá»•ng Tháº©m Äá»‹nh (The Quad Gates)
+| Cá»•ng Tháº©m Äá»‹nh | Káº¿t Quáº£ |
 | :--- | :---: |
 $($rows -join "`n")
 
 ---
 
-## 2. Kết Luận & Khuyến Nghị
+## 2. Káº¿t Luáº­n & Khuyáº¿n Nghá»‹
 $(if ($failedGates.Count -gt 0) {
-    "Sản phẩm bị từ chối tại các cổng: " + ($failedGates -join ", ") + ". Yêu cầu Maker Agent khắc phục ngay."
+    "Sáº£n pháº©m bá»‹ tá»« chá»‘i táº¡i cÃ¡c cá»•ng: " + ($failedGates -join ", ") + ". YÃªu cáº§u Maker Agent kháº¯c phá»¥c ngay."
 } else {
-    "Sản phẩm đáp ứng đầy đủ tiêu chuẩn chất lượng. Đủ điều kiện trình Chủ nhân phê duyệt."
+    "Sáº£n pháº©m Ä‘Ã¡p á»©ng Ä‘áº§y Ä‘á»§ tiÃªu chuáº©n cháº¥t lÆ°á»£ng. Äá»§ Ä‘iá»u kiá»‡n trÃ¬nh Chá»§ nhÃ¢n phÃª duyá»‡t."
 })
 
 ---
-*Biên bản được xuất tự động bởi Design-Audit-Hub Engine.*
+*BiÃªn báº£n Ä‘Æ°á»£c xuáº¥t tá»± Ä‘á»™ng bá»Ÿi Design-Audit-Hub Engine.*
 "@
     Set-Content -Path $ReportOutput -Value $md -Encoding UTF8
     Write-Host " [OK] Da ghi bao cao tham dinh vao: $ReportOutput" -ForegroundColor Green

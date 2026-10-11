@@ -47,7 +47,7 @@ Bố cục trang phải dẫn dắt tâm lý người xem theo nhịp điệu lo
 
 ## 🌌 3. KHOẢNG THỞ NGHỆ THUẬT (GENEROUS SECTION BREATHING ROOM)
 
-* Khoảng cách giữa các Section trên Landing Page phải rộng rãi từ **`96px - 160px`** (trên Desktop) và **`64px - 96px`** (trên Mobile) để dẫn dắt nhịp đọc thoải mái, không dồn cục thông tin.
+* Khoảng cách giữa các Section trên Landing Page (Khoảng thở 120px - 160px) phải rộng rãi từ **`120px - 160px`** (trên Desktop) và **`64px - 96px`** (trên Mobile) để dẫn dắt nhịp đọc thoải mái, không dồn cục thông tin.
 * Sử dụng bố cục **1 Cột trọng tâm (Single-Column Stack)** để dẫn hướng mắt cuộn dọc tự nhiên, giảm tải nhận thức.
 
 ---

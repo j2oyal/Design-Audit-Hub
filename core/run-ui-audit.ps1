@@ -3,13 +3,14 @@
     PANE 2: GATE 2 - UI VISUAL CRAFT & AESTHETICS AUDITOR (DOMAIN-AWARE)
 #>
 param(
-    [string]$Path = "D:\Github\Design-Audit-Hub",
+    [string]$Path = "",
     [string]$Target = "",
     [string]$Profile = "Auto",
     [switch]$Init,
     [switch]$NoInteractive
 )
 
+if ([string]::IsNullOrWhiteSpace($Path)) { $Path = Split-Path $PSScriptRoot -Parent }
 if ([string]::IsNullOrWhiteSpace($Target)) { $Target = $Path }
 if (Test-Path $Target) { Set-Location $Target }
 
@@ -50,7 +51,7 @@ if ($NoInteractive) {
 $isContinue = ($args -contains "-c") -or ($args -contains "--continue")
 if ($Init -and !$isContinue -and (Get-Command agy.exe -ErrorAction SilentlyContinue)) {
     if ($Profile -eq "Admin") {
-        $prompt = "Ban la Chief Art Director & Visual Polish Auditor (Gate 2 tai Design-Audit-Hub). Muc tieu: $Target. Profile: ADMIN. Hay nap ky nang .agents/skills/ui-visual-audit va domain rule .agents/skills/ui-visual-audit/domains/admin-ui.md de kiem tra mat do bang B2B (28/36/48px), can le so hoc phai 100% (tabular-nums), bang mau Semantic trang thai va hop thoai canh bao Destructive."
+        $prompt = "Ban la Chief Art Director & Visual Polish Auditor (Gate 2 tai Design-Audit-Hub). Muc tieu: $Target. Profile: ADMIN. Hay nap ky nang .agents/skills/ui-visual-audit va tieu chuan standards/02-ui-craft/ui-admin-standards.md de kiem tra mat do bang B2B (28/36/48px), can le so hoc phai 100% (tabular-nums), bang mau Semantic trang thai va hop thoai canh bao Destructive."
     } else {
         $prompt = "Ban la Chief Art Director & Visual Polish Auditor (Gate 2 tai Design-Audit-Hub). Muc tieu: $Target. Profile: $Profile. Hay nap ky nang .agents/skills/ui-visual-audit va tieu chuan standards/02-ui-craft/ de kiem tra my thuat thi giac, triet tieu 5 loi AI-slop, do tuong phan WCAG va chi tiet vi mo Vercel."
     }

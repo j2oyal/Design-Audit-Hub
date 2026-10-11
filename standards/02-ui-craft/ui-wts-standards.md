@@ -65,10 +65,30 @@ Với Day-trader chuyên nghiệp, **$90\%$ thao tác khớp lệnh phải thự
 
 1. **Bảng Màu Dark Mode Tối Ưu Cho 8-12 Tiếng Làm Việc**:
    * Không dùng nền đen tuyền `#000000` tương phản gắt với chữ trắng (gây ảo giác bóng ma khi nhìn lâu).
-   * Sử dụng nền **Slate / Zinc siêu sâu**: `#0B0E14` (Base Canvas), `#12161F` (Surface Panels), `#1E2330` (Hover/Card).
-2. **Màu Sắc Tài Chính Theo Chuẩn Sở Giao Dịch**:
-   * **Xanh lá (`#00C076` / `#10B981`)**: Giá tăng / Lãi.
-   * **Đỏ (`#FF4D4F` / `#EF4444`)**: Giá giảm / Lỗ.
-   * **Vàng (`#F59E0B`)**: Giá tham chiếu.
-   * **Tím (`#A855F7`)**: Giá trần (Ceiling).
-   * **Xanh lơ (`#06B6D4`)**: Giá sàn (Floor).
+   * **Nền Giao Diện (Dark Cockpit First)**: `#090D16` / `#0F172A` (Base Canvas), `#12161F` (Surface Panels), `#1E293B` / `#1E2330` (Bề mặt thẻ Card / Hover).
+2. **Màu Sắc Tài Chính Theo Chuẩn Sở Giao Dịch & Khớp Lệnh (Semantic Trading)**:
+   * **Tăng giá / Mua (Buy)**: Xanh lá chuẩn (`#1AB74E` / `#00C076` / `#10B981`), nền bán trong suốt `rgba(26, 183, 78, 0.12)`.
+   * **Giảm giá / Bán (Sell)**: Đỏ chuẩn (`#F74747` / `#FF4D4F` / `#EF4444`), nền bán trong suốt `rgba(247, 71, 71, 0.12)`.
+   * **Tham chiếu / Đứng giá (Flat)**: Vàng cam (`#EAB308` / `#F59E0B`).
+   * **Giá trần (Ceiling)**: Tím (`#A855F7`).
+   * **Giá sàn (Floor)**: Xanh lơ (`#06B6D4`).
+3. **Độ Tương Phản WCAG 2.1 AA/AAA**:
+   * Tương phản văn bản trên nền tối $\ge 4.5:1$ (đạt AA) đối với body text và $\ge 7:1$ (đạt AAA) đối với các con số thị giá quan trọng.
+
+---
+
+## 📐 5. CĂN LỀ SỐ HỌC 100% & QUY TẮC 3 - 3 - 2
+1. **Căn phải 100%**: Tất cả các cột số liệu (Giá, Khối lượng, Lãi lỗ, Sức mua, Tỷ lệ %) bắt buộc căn phải và thẳng hàng dọc tuyệt đối kèm `tabular-nums`.
+2. **Căn trái 100%**: Mã cổ phiếu, Tên công ty, Loại lệnh, Tên thị trường.
+3. **Căn giữa**: Thao tác Action, Badges trạng thái ngắn, Checkbox chọn dòng.
+4. **Quy tắc 3 - 3 - 2**:
+   - Thị giá: 3 chữ số thập phân (`HK$ 385.200`, `0.125`).
+   - Khối lượng: 3 chữ số thập phân (`18.420M`, `50.000K`).
+   - Tiền tệ & Vốn hóa: 2 chữ số thập phân (`HK$ 10,000,000.00`).
+
+---
+
+## 📜 6. THANH CUỘN SIÊU MỎNG 6PX & CHỐNG AI-SLOP
+1. **Thanh cuộn siêu mỏng (Thin Scrollbar)**: Bề rộng tối đa $6\text{px}$, màu xám nhạt mờ (`rgba(148, 163, 184, 0.3)`), bo góc $4\text{px}$. Cấm dùng thanh cuộn mặc định to bản của trình duyệt gây vỡ lề bảng biểu.
+2. **Zebra Striping & Hover State**: Màu nền hàng xen kẽ tinh tế, đổi màu nền rõ nét khi rê chuột để mắt không bị nhảy dòng khi quét bảng giá dài.
+3. **Diệt trừ AI-slop**: Cấm gradient màu tím/hồng neon kỳ dị, cấm đổ bóng mờ nhòe quá mức (over-blur glow) làm mỏi mắt trader trong phiên giao dịch kéo dài.
